@@ -40,6 +40,11 @@ recoveries after minutes (or never):
   - physical machine or a VM (see dmesg logs),
   - chipset and associated kernel functions (see dmesg logs).
 
+Things that seem irrelevant (after testing):
+
+  - LUKS encryption of the root filesystem,
+  - `vm.oom_kill_allocating_task` setting.
+
 
 With 4GB RAM + 256MB swap it needs about 100 iterations.
 
