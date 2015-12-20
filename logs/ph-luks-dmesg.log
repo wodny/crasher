@@ -1,0 +1,124 @@
+[...]
+[ 1452.570182] Purging GPU memory, 0 bytes freed, 5685248 bytes still pinned.
+[ 1452.570289] Xorg invoked oom-killer: gfp_mask=0x0, order=0, oom_score_adj=0
+[ 1452.570292] Xorg cpuset=/ mems_allowed=0
+[ 1452.570297] CPU: 1 PID: 2632 Comm: Xorg Tainted: G           O  3.16.0-4-amd64 #1 Debian 3.16.7-ckt11-1+deb8u6
+[ 1452.570299] Hardware name: LENOVO 20257/Ideapad S210, BIOS 80CN15WW 04/10/2013
+[ 1452.570300]  0000000000000000 ffffffff8150b4e5 ffff880149806c60 ffffffff81509147
+[ 1452.570304]  000000000056c000 ffff8800a8187b30 ffff8800a8187c08 0000000000000000
+[ 1452.570306]  ffff8800a9c92000 ffffffffa04672ab ffff8800a8180000 0100000000000000
+[ 1452.570309] Call Trace:
+[ 1452.570316]  [<ffffffff8150b4e5>] ? dump_stack+0x41/0x51
+[ 1452.570319]  [<ffffffff81509147>] ? dump_header+0x76/0x1e8
+[ 1452.570345]  [<ffffffffa04672ab>] ? i915_gem_shrinker_oom+0x15b/0x1c0 [i915]
+[ 1452.570349]  [<ffffffff811404fd>] ? oom_kill_process+0x21d/0x370
+[ 1452.570352]  [<ffffffff811400bd>] ? find_lock_task_mm+0x3d/0x90
+[ 1452.570355]  [<ffffffff81140c63>] ? out_of_memory+0x473/0x4b0
+[ 1452.570359]  [<ffffffff81140d0f>] ? pagefault_out_of_memory+0x6f/0x80
+[ 1452.570363]  [<ffffffff81057505>] ? __do_page_fault+0x3c5/0x4f0
+[ 1452.570367]  [<ffffffff810795d5>] ? restore_altstack+0x15/0x30
+[ 1452.570372]  [<ffffffff815136e8>] ? page_fault+0x28/0x30
+[ 1452.570373] Mem-Info:
+[ 1452.570375] Node 0 DMA per-cpu:
+[ 1452.570377] CPU    0: hi:    0, btch:   1 usd:   0
+[ 1452.570379] CPU    1: hi:    0, btch:   1 usd:   0
+[ 1452.570380] Node 0 DMA32 per-cpu:
+[ 1452.570382] CPU    0: hi:  186, btch:  31 usd: 184
+[ 1452.570383] CPU    1: hi:  186, btch:  31 usd:  68
+[ 1452.570384] Node 0 Normal per-cpu:
+[ 1452.570386] CPU    0: hi:  186, btch:  31 usd: 161
+[ 1452.570387] CPU    1: hi:  186, btch:  31 usd:  18
+[ 1452.570392] active_anon:732891 inactive_anon:201559 isolated_anon:0
+ active_file:171 inactive_file:228 isolated_file:0
+ unevictable:12 dirty:0 writeback:0 unstable:0
+ free:24977 slab_reclaimable:3487 slab_unreclaimable:6650
+ mapped:270 shmem:3782 pagetables:5333 bounce:0
+ free_cma:0
+[ 1452.570395] Node 0 DMA free:15560kB min:268kB low:332kB high:400kB active_anon:108kB inactive_anon:116kB active_file:0kB inactive_file:4kB unevictable:0kB isolated(anon):0kB isolated(file):0kB present:15900kB managed:15808kB mlocked:0kB dirty:0kB writeback:0kB mapped:0kB shmem:0kB slab_reclaimable:4kB slab_unreclaimable:16kB kernel_stack:0kB pagetables:0kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:0 all_unreclaimable? no
+[ 1452.570400] lowmem_reserve[]: 0 2614 3825 3825
+[ 1452.570403] Node 0 DMA32 free:62352kB min:46012kB low:57512kB high:69016kB active_anon:2054536kB inactive_anon:513652kB active_file:208kB inactive_file:128kB unevictable:48kB isolated(anon):0kB isolated(file):0kB present:2754300kB managed:2679856kB mlocked:48kB dirty:0kB writeback:0kB mapped:228kB shmem:11552kB slab_reclaimable:5916kB slab_unreclaimable:13732kB kernel_stack:2160kB pagetables:13688kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:693 all_unreclaimable? yes
+[ 1452.570408] lowmem_reserve[]: 0 0 1210 1210
+[ 1452.570410] Node 0 Normal free:21996kB min:21296kB low:26620kB high:31944kB active_anon:876920kB inactive_anon:292468kB active_file:476kB inactive_file:780kB unevictable:0kB isolated(anon):0kB isolated(file):0kB present:1300480kB managed:1239436kB mlocked:0kB dirty:0kB writeback:0kB mapped:852kB shmem:3576kB slab_reclaimable:8028kB slab_unreclaimable:12852kB kernel_stack:3120kB pagetables:7644kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:1776 all_unreclaimable? no
+[ 1452.570415] lowmem_reserve[]: 0 0 0 0
+[ 1452.570418] Node 0 DMA: 6*4kB (EM) 2*8kB (EM) 2*16kB (UE) 2*32kB (UE) 3*64kB (UE) 3*128kB (UE) 2*256kB (EM) 2*512kB (EM) 3*1024kB (UEM) 3*2048kB (EMR) 1*4096kB (M) = 15560kB
+[ 1452.570431] Node 0 DMA32: 1028*4kB (UEM) 525*8kB (UEM) 261*16kB (UEM) 195*32kB (UEM) 115*64kB (UEM) 74*128kB (UEM) 47*256kB (UEM) 19*512kB (E) 1*1024kB (E) 2*2048kB (R) 0*4096kB = 62440kB
+[ 1452.570442] Node 0 Normal: 319*4kB (UEM) 229*8kB (UEM) 143*16kB (UEM) 69*32kB (UEM) 50*64kB (UEM) 28*128kB (UEM) 14*256kB (UE) 0*512kB 0*1024kB 0*2048kB 1*4096kB (R) = 22068kB
+[ 1452.570454] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[ 1452.570455] 4414 total pagecache pages
+[ 1452.570457] 160 pages in swap cache
+[ 1452.570458] Swap cache stats: add 67280, delete 67120, find 864/1612
+[ 1452.570459] Free swap  = 0kB
+[ 1452.570460] Total swap = 262140kB
+[ 1452.570462] 1017670 pages RAM
+[ 1452.570463] 0 pages HighMem/MovableOnly
+[ 1452.570464] 15261 pages reserved
+[ 1452.570465] 0 pages hwpoisoned
+[ 1452.570466] [ pid ]   uid  tgid total_vm      rss nr_ptes swapents oom_score_adj name
+[...]
+[ 1452.570663] [ 4933]  1000  4933   967956   928199    1868    16746             0 crash
+[ 1452.570665] Out of memory: Kill process 4933 (crash) score 902 or sacrifice child
+[ 1452.570668] Killed process 4933 (crash) total-vm:3871824kB, anon-rss:3712796kB, file-rss:0kB
+[...]
+[ 2001.497607] Purging GPU memory, 0 bytes freed, 425984 bytes still pinned.
+[ 2001.497704] crash invoked oom-killer: gfp_mask=0x280da, order=0, oom_score_adj=0
+[ 2001.497707] crash cpuset=session-9.scope mems_allowed=0
+[ 2001.497716] CPU: 1 PID: 5228 Comm: crash Tainted: G           O  3.16.0-4-amd64 #1 Debian 3.16.7-ckt11-1+deb8u6
+[ 2001.497718] Hardware name: LENOVO 20257/Ideapad S210, BIOS 80CN15WW 04/10/2013
+[ 2001.497721]  0000000000000000 ffffffff8150b4e5 ffff880092c34a20 ffffffff81509147
+[ 2001.497726]  0000000000068000 ffff8800a8187b30 ffff8800a8187c08 0000000000000000
+[ 2001.497730]  ffff8800a9c92000 ffffffffa04672ab ffff8800a8180000 0100000000000000
+[ 2001.497734] Call Trace:
+[ 2001.497746]  [<ffffffff8150b4e5>] ? dump_stack+0x41/0x51
+[ 2001.497751]  [<ffffffff81509147>] ? dump_header+0x76/0x1e8
+[ 2001.497787]  [<ffffffffa04672ab>] ? i915_gem_shrinker_oom+0x15b/0x1c0 [i915]
+[ 2001.497794]  [<ffffffff811404fd>] ? oom_kill_process+0x21d/0x370
+[ 2001.497799]  [<ffffffff811400bd>] ? find_lock_task_mm+0x3d/0x90
+[ 2001.497804]  [<ffffffff81140c63>] ? out_of_memory+0x473/0x4b0
+[ 2001.497811]  [<ffffffff81146a6d>] ? __alloc_pages_nodemask+0x9cd/0xb30
+[ 2001.497817]  [<ffffffff81187dd8>] ? alloc_pages_vma+0x98/0x160
+[ 2001.497822]  [<ffffffff81169c5a>] ? handle_mm_fault+0xd9a/0x11c0
+[ 2001.497827]  [<ffffffff8116f93f>] ? mmap_region+0x15f/0x650
+[ 2001.497834]  [<ffffffff810572b7>] ? __do_page_fault+0x177/0x4f0
+[ 2001.497839]  [<ffffffff81170119>] ? do_mmap_pgoff+0x2e9/0x3b0
+[ 2001.497843]  [<ffffffff81158f5b>] ? vm_mmap_pgoff+0x9b/0xc0
+[ 2001.497850]  [<ffffffff815136e8>] ? page_fault+0x28/0x30
+[ 2001.497853] Mem-Info:
+[ 2001.497856] Node 0 DMA per-cpu:
+[ 2001.497859] CPU    0: hi:    0, btch:   1 usd:   0
+[ 2001.497862] CPU    1: hi:    0, btch:   1 usd:   0
+[ 2001.497863] Node 0 DMA32 per-cpu:
+[ 2001.497866] CPU    0: hi:  186, btch:  31 usd:  72
+[ 2001.497869] CPU    1: hi:  186, btch:  31 usd: 186
+[ 2001.497870] Node 0 Normal per-cpu:
+[ 2001.497873] CPU    0: hi:  186, btch:  31 usd: 178
+[ 2001.497875] CPU    1: hi:  186, btch:  31 usd:  47
+[ 2001.497881] active_anon:734428 inactive_anon:201985 isolated_anon:0
+ active_file:2482 inactive_file:2543 isolated_file:0
+ unevictable:0 dirty:2564 writeback:1667 unstable:0
+ free:21919 slab_reclaimable:3418 slab_unreclaimable:6146
+ mapped:2142 shmem:176 pagetables:3070 bounce:0
+ free_cma:0
+[ 2001.497887] Node 0 DMA free:15564kB min:268kB low:332kB high:400kB active_anon:108kB inactive_anon:112kB active_file:0kB inactive_file:0kB unevictable:0kB isolated(anon):0kB isolated(file):0kB present:15900kB managed:15808kB mlocked:0kB dirty:0kB writeback:0kB mapped:0kB shmem:0kB slab_reclaimable:4kB slab_unreclaimable:16kB kernel_stack:0kB pagetables:4kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:0 all_unreclaimable? yes
+[ 2001.497895] lowmem_reserve[]: 0 2614 3825 3825
+[ 2001.497900] Node 0 DMA32 free:50840kB min:46012kB low:57512kB high:69016kB active_anon:2057624kB inactive_anon:514416kB active_file:8184kB inactive_file:8304kB unevictable:0kB isolated(anon):0kB isolated(file):0kB present:2754300kB managed:2679856kB mlocked:0kB dirty:8336kB writeback:0kB mapped:7632kB shmem:620kB slab_reclaimable:5852kB slab_unreclaimable:11920kB kernel_stack:1280kB pagetables:8124kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:27744 all_unreclaimable? yes
+[ 2001.497908] lowmem_reserve[]: 0 0 1210 1210
+[ 2001.497912] Node 0 Normal free:21272kB min:21296kB low:26620kB high:31944kB active_anon:879980kB inactive_anon:293412kB active_file:1744kB inactive_file:1868kB unevictable:0kB isolated(anon):0kB isolated(file):0kB present:1300480kB managed:1239436kB mlocked:0kB dirty:1920kB writeback:6668kB mapped:936kB shmem:84kB slab_reclaimable:7816kB slab_unreclaimable:12648kB kernel_stack:2368kB pagetables:4152kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:6869 all_unreclaimable? yes
+[ 2001.497919] lowmem_reserve[]: 0 0 0 0
+[ 2001.497924] Node 0 DMA: 3*4kB (UEM) 2*8kB (UE) 1*16kB (E) 3*32kB (UEM) 3*64kB (UE) 3*128kB (UE) 2*256kB (EM) 2*512kB (EM) 3*1024kB (UEM) 3*2048kB (EMR) 1*4096kB (M) = 15564kB
+[ 2001.497945] Node 0 DMA32: 580*4kB (UE) 367*8kB (UEM) 399*16kB (UEM) 241*32kB (UE) 88*64kB (UE) 56*128kB (UEM) 37*256kB (UEM) 10*512kB (E) 0*1024kB 2*2048kB (R) 0*4096kB = 50840kB
+[ 2001.497963] Node 0 Normal: 184*4kB (UE) 215*8kB (UEM) 194*16kB (UEM) 82*32kB (UEM) 51*64kB (UE) 27*128kB (UE) 7*256kB (EM) 1*512kB (M) 0*1024kB 0*2048kB 1*4096kB (R) = 21304kB
+[ 2001.497983] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[ 2001.497985] 7914 total pagecache pages
+[ 2001.497987] 2697 pages in swap cache
+[ 2001.497990] Swap cache stats: add 141201, delete 138504, find 390654/399724
+[ 2001.497992] Free swap  = 0kB
+[ 2001.497993] Total swap = 262140kB
+[ 2001.497995] 1017670 pages RAM
+[ 2001.497997] 0 pages HighMem/MovableOnly
+[ 2001.497999] 15261 pages reserved
+[ 2001.498000] 0 pages hwpoisoned
+[ 2001.498002] [ pid ]   uid  tgid total_vm      rss nr_ptes swapents oom_score_adj name
+[...]
+[ 2001.498167] [ 5228]  1000  5228   997876   930185    1953    58143             0 crash
+[ 2001.498170] Out of memory: Kill process 5228 (crash) score 943 or sacrifice child
+[ 2001.498591] Killed process 5228 (crash) total-vm:3991504kB, anon-rss:3718376kB, file-rss:2364kB

@@ -1,0 +1,121 @@
+[...]
+[  765.380917] crash invoked oom-killer: gfp_mask=0x280da, order=0, oom_score_adj=0
+[  765.380924] crash cpuset=/ mems_allowed=0
+[  765.380933] CPU: 0 PID: 1238 Comm: crash Not tainted 3.16.0-4-amd64 #1 Debian 3.16.7-ckt20-1+deb8u1
+[  765.380935] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[  765.380938]  0000000000000000 ffffffff8150daef ffff88007b0983d0 ffffffff8150b707
+[  765.380942]  0000000000000000 ffffffff810d4f2f 0000000000000000 ffffffff8151246e
+[  765.380945]  0000000000000200 ffffffff81067993 ffffffff810c2644 0000000000000000
+[  765.380948] Call Trace:
+[  765.380960]  [<ffffffff8150daef>] ? dump_stack+0x41/0x51
+[  765.380964]  [<ffffffff8150b707>] ? dump_header+0x76/0x1e8
+[  765.380971]  [<ffffffff810d4f2f>] ? smp_call_function_single+0x5f/0xa0
+[  765.380975]  [<ffffffff8151246e>] ? mutex_lock+0xe/0x2a
+[  765.380980]  [<ffffffff81067993>] ? put_online_cpus+0x23/0x80
+[  765.380985]  [<ffffffff810c2644>] ? rcu_oom_notify+0xc4/0xe0
+[  765.380991]  [<ffffffff81151bbc>] ? do_try_to_free_pages+0x4ac/0x520
+[  765.380996]  [<ffffffff8114082d>] ? oom_kill_process+0x21d/0x370
+[  765.381000]  [<ffffffff811403ed>] ? find_lock_task_mm+0x3d/0x90
+[  765.381004]  [<ffffffff81140f93>] ? out_of_memory+0x473/0x4b0
+[  765.381008]  [<ffffffff81146d9d>] ? __alloc_pages_nodemask+0x9cd/0xb30
+[  765.381012]  [<ffffffff81188068>] ? alloc_pages_vma+0x98/0x160
+[  765.381017]  [<ffffffff8116a01d>] ? handle_mm_fault+0xe3d/0x11c0
+[  765.381021]  [<ffffffff8116df4c>] ? vma_adjust+0x3dc/0x7b0
+[  765.381025]  [<ffffffff810572b7>] ? __do_page_fault+0x177/0x4f0
+[  765.381030]  [<ffffffff811717ef>] ? mprotect_fixup+0x14f/0x270
+[  765.381034]  [<ffffffff81515ce8>] ? page_fault+0x28/0x30
+[  765.381036] Mem-Info:
+[  765.381038] Node 0 DMA per-cpu:
+[  765.381041] CPU    0: hi:    0, btch:   1 usd:   0
+[  765.381043] Node 0 DMA32 per-cpu:
+[  765.381046] CPU    0: hi:  186, btch:  31 usd:  60
+[  765.381050] active_anon:484718 inactive_anon:2471 isolated_anon:0
+ active_file:348 inactive_file:382 isolated_file:0
+ unevictable:8 dirty:0 writeback:0 unstable:0
+ free:13243 slab_reclaimable:2447 slab_unreclaimable:3092
+ mapped:1861 shmem:2623 pagetables:3813 bounce:0
+ free_cma:0
+[  765.381055] Node 0 DMA free:8308kB min:348kB low:432kB high:520kB active_anon:6980kB inactive_anon:216kB active_file:0kB inactive_file:0kB unevictable:0kB isolated(anon):0kB isolated(file):0kB present:15992kB managed:15908kB mlocked:0kB dirty:0kB writeback:0kB mapped:228kB shmem:216kB slab_reclaimable:60kB slab_unreclaimable:112kB kernel_stack:32kB pagetables:128kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:3 all_unreclaimable? yes
+[  765.381062] lowmem_reserve[]: 0 1992 1992 1992
+[  765.381066] Node 0 DMA32 free:44664kB min:44704kB low:55880kB high:67056kB active_anon:1931892kB inactive_anon:9668kB active_file:1392kB inactive_file:1528kB unevictable:32kB isolated(anon):0kB isolated(file):0kB present:2080704kB managed:2042760kB mlocked:32kB dirty:0kB writeback:0kB mapped:7216kB shmem:10276kB slab_reclaimable:9728kB slab_unreclaimable:12256kB kernel_stack:3600kB pagetables:15124kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:5127 all_unreclaimable? yes
+[  765.381073] lowmem_reserve[]: 0 0 0 0
+[  765.381076] Node 0 DMA: 3*4kB (UEM) 3*8kB (UE) 3*16kB (UEM) 3*32kB (UEM) 1*64kB (U) 3*128kB (UEM) 2*256kB (EM) 2*512kB (EM) 2*1024kB (UE) 2*2048kB (ER) 0*4096kB = 8308kB
+[  765.381091] Node 0 DMA32: 368*4kB (E) 169*8kB (UEM) 55*16kB (UEM) 24*32kB (UEM) 6*64kB (UE) 3*128kB (UEM) 0*256kB 1*512kB (M) 2*1024kB (UM) 4*2048kB (UEM) 7*4096kB (UMR) = 44664kB
+[  765.381107] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[  765.381109] 3374 total pagecache pages
+[  765.381111] 0 pages in swap cache
+[  765.381113] Swap cache stats: add 0, delete 0, find 0/0
+[  765.381114] Free swap  = 0kB
+[  765.381115] Total swap = 0kB
+[  765.381117] 524174 pages RAM
+[  765.381118] 0 pages HighMem/MovableOnly
+[  765.381120] 9486 pages reserved
+[  765.381121] 0 pages hwpoisoned
+[  765.381123] [ pid ]   uid  tgid total_vm      rss nr_ptes swapents oom_score_adj name
+[...]
+[  765.381349] [ 1238]  1000  1238   402096   380553     767        0             0 crash
+[  765.381352] Out of memory: Kill process 1238 (crash) score 740 or sacrifice child
+[  765.381356] Killed process 1238 (crash) total-vm:1608384kB, anon-rss:1521156kB, file-rss:1056kB
+[ 1065.284855] wicd invoked oom-killer: gfp_mask=0x201da, order=0, oom_score_adj=0
+[ 1065.284860] wicd cpuset=/ mems_allowed=0
+[ 1065.284867] CPU: 0 PID: 634 Comm: wicd Not tainted 3.16.0-4-amd64 #1 Debian 3.16.7-ckt20-1+deb8u1
+[ 1065.284869] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[ 1065.284871]  0000000000000000 ffffffff8150daef ffff88007c372ae0 ffffffff8150b707
+[ 1065.284874]  0000000000000000 ffffffff810d4f2f 0000000000000000 ffffffff8151246e
+[ 1065.284877]  0000000000000200 ffffffff81067993 ffffffff810c2644 0000000000000000
+[ 1065.284880] Call Trace:
+[ 1065.284888]  [<ffffffff8150daef>] ? dump_stack+0x41/0x51
+[ 1065.284892]  [<ffffffff8150b707>] ? dump_header+0x76/0x1e8
+[ 1065.284897]  [<ffffffff810d4f2f>] ? smp_call_function_single+0x5f/0xa0
+[ 1065.284900]  [<ffffffff8151246e>] ? mutex_lock+0xe/0x2a
+[ 1065.284904]  [<ffffffff81067993>] ? put_online_cpus+0x23/0x80
+[ 1065.284909]  [<ffffffff810c2644>] ? rcu_oom_notify+0xc4/0xe0
+[ 1065.284914]  [<ffffffff81151bbc>] ? do_try_to_free_pages+0x4ac/0x520
+[ 1065.284918]  [<ffffffff8114082d>] ? oom_kill_process+0x21d/0x370
+[ 1065.284921]  [<ffffffff811403ed>] ? find_lock_task_mm+0x3d/0x90
+[ 1065.284924]  [<ffffffff81140f93>] ? out_of_memory+0x473/0x4b0
+[ 1065.284927]  [<ffffffff81146d9d>] ? __alloc_pages_nodemask+0x9cd/0xb30
+[ 1065.284933]  [<ffffffff81185f7d>] ? alloc_pages_current+0x9d/0x150
+[ 1065.284936]  [<ffffffff8113f590>] ? filemap_fault+0x1a0/0x420
+[ 1065.284938]  [<ffffffff8116542a>] ? __do_fault+0x3a/0xa0
+[ 1065.284941]  [<ffffffff81167fee>] ? do_read_fault.isra.54+0x4e/0x300
+[ 1065.284944]  [<ffffffff8116981c>] ? handle_mm_fault+0x63c/0x11c0
+[ 1065.284947]  [<ffffffff811660cc>] ? free_pgtables+0xcc/0x120
+[ 1065.284951]  [<ffffffff810572b7>] ? __do_page_fault+0x177/0x4f0
+[ 1065.284955]  [<ffffffff8109cfb7>] ? put_prev_entity+0x57/0x350
+[ 1065.284958]  [<ffffffff811e332c>] ? fsnotify+0x23c/0x300
+[ 1065.284962]  [<ffffffff811ec7a8>] ? eventfd_ctx_read+0x58/0x1e0
+[ 1065.284967]  [<ffffffff811a85a4>] ? vfs_write+0x154/0x1f0
+[ 1065.284970]  [<ffffffff81515ce8>] ? page_fault+0x28/0x30
+[ 1065.284971] Mem-Info:
+[ 1065.284973] Node 0 DMA per-cpu:
+[ 1065.284976] CPU    0: hi:    0, btch:   1 usd:   0
+[ 1065.284977] Node 0 DMA32 per-cpu:
+[ 1065.284979] CPU    0: hi:  186, btch:  31 usd:  42
+[ 1065.284983] active_anon:484629 inactive_anon:2471 isolated_anon:0
+ active_file:371 inactive_file:408 isolated_file:0
+ unevictable:8 dirty:0 writeback:2 unstable:0
+ free:13229 slab_reclaimable:2465 slab_unreclaimable:3089
+ mapped:1908 shmem:2623 pagetables:3821 bounce:0
+ free_cma:0
+[ 1065.284987] Node 0 DMA free:8308kB min:348kB low:432kB high:520kB active_anon:6988kB inactive_anon:216kB active_file:0kB inactive_file:0kB unevictable:0kB isolated(anon):0kB isolated(file):0kB present:15992kB managed:15908kB mlocked:0kB dirty:0kB writeback:0kB mapped:220kB shmem:216kB slab_reclaimable:60kB slab_unreclaimable:108kB kernel_stack:32kB pagetables:140kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:2 all_unreclaimable? yes
+[ 1065.284993] lowmem_reserve[]: 0 1992 1992 1992
+[ 1065.284996] Node 0 DMA32 free:44608kB min:44704kB low:55880kB high:67056kB active_anon:1931528kB inactive_anon:9668kB active_file:1484kB inactive_file:1632kB unevictable:32kB isolated(anon):0kB isolated(file):0kB present:2080704kB managed:2042760kB mlocked:32kB dirty:0kB writeback:8kB mapped:7412kB shmem:10276kB slab_reclaimable:9800kB slab_unreclaimable:12248kB kernel_stack:3648kB pagetables:15144kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:5011 all_unreclaimable? yes
+[ 1065.285001] lowmem_reserve[]: 0 0 0 0
+[ 1065.285004] Node 0 DMA: 3*4kB (UEM) 3*8kB (EM) 3*16kB (UEM) 3*32kB (UEM) 1*64kB (U) 3*128kB (UEM) 2*256kB (EM) 2*512kB (EM) 2*1024kB (UE) 2*2048kB (ER) 0*4096kB = 8308kB
+[ 1065.285016] Node 0 DMA32: 352*4kB (UEM) 166*8kB (UE) 51*16kB (UE) 23*32kB (UEM) 6*64kB (UE) 2*128kB (EM) 1*256kB (M) 1*512kB (M) 2*1024kB (UM) 4*2048kB (UEM) 7*4096kB (UMR) = 44608kB
+[ 1065.285030] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[ 1065.285031] 3426 total pagecache pages
+[ 1065.285033] 0 pages in swap cache
+[ 1065.285035] Swap cache stats: add 0, delete 0, find 0/0
+[ 1065.285036] Free swap  = 0kB
+[ 1065.285037] Total swap = 0kB
+[ 1065.285038] 524174 pages RAM
+[ 1065.285040] 0 pages HighMem/MovableOnly
+[ 1065.285041] 9486 pages reserved
+[ 1065.285042] 0 pages hwpoisoned
+[ 1065.285043] [ pid ]   uid  tgid total_vm      rss nr_ptes swapents oom_score_adj name
+[...]
+[ 1065.286057] [ 1323]  1000  1323   395994   374055     754        0             0 crash
+[ 1065.286059] Out of memory: Kill process 1323 (crash) score 728 or sacrifice child
+[ 1065.286063] Killed process 1323 (crash) total-vm:1583976kB, anon-rss:1495916kB, file-rss:304kB

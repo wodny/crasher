@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
         if (anim == NULL)
             error (1, 0, "failed to create animation");
         g_free (filename);
-        // the killing machine
+        // no unref to exhaust memory the same way gpicview does it
         //g_object_unref (anim);
         ++i;
     }

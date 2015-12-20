@@ -1,0 +1,115 @@
+top - 13:05:57 up 16 min,  1 user,  load average: 0.13, 1.33, 1.11
+Tasks: 124 total,   1 running, 123 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 10.8 us,  8.5 sy,  0.0 ni, 66.5 id, 13.3 wa,  0.0 hi,  0.9 si,  0.0 st
+KiB Mem:   2058668 total,   580532 used,  1478136 free,     6464 buffers
+KiB Swap:        0 total,        0 used,        0 free.    82112 cached Mem
+--
+top - 13:05:59 up 17 min,  1 user,  load average: 0.13, 1.33, 1.11
+Tasks: 128 total,   2 running, 126 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 12.1 us,  1.7 sy,  0.0 ni, 86.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:   2058668 total,   580532 used,  1478136 free,     6464 buffers
+KiB Swap:        0 total,        0 used,        0 free.    82112 cached Mem
+--
+top - 13:06:01 up 17 min,  1 user,  load average: 0.20, 1.32, 1.11
+Tasks: 128 total,   2 running, 126 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 90.4 us,  9.6 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:   2058668 total,   830432 used,  1228236 free,     6464 buffers
+KiB Swap:        0 total,        0 used,        0 free.    82112 cached Mem
+--
+top - 13:06:03 up 17 min,  1 user,  load average: 0.20, 1.32, 1.11
+Tasks: 128 total,   5 running, 123 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 92.5 us,  6.8 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.8 si,  0.0 st
+KiB Mem:   2058668 total,   830432 used,  1228236 free,     6464 buffers
+KiB Swap:        0 total,        0 used,        0 free.    82112 cached Mem
+--
+top - 13:06:05 up 17 min,  1 user,  load average: 0.26, 1.31, 1.11
+Tasks: 128 total,   3 running, 125 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 90.6 us,  9.4 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:   2058668 total,  1284976 used,   773692 free,     6476 buffers
+KiB Swap:        0 total,        0 used,        0 free.    82116 cached Mem
+--
+top - 13:06:07 up 17 min,  1 user,  load average: 0.26, 1.31, 1.11
+Tasks: 128 total,   2 running, 126 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 92.5 us,  7.5 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:   2058668 total,  1284976 used,   773692 free,     6476 buffers
+KiB Swap:        0 total,        0 used,        0 free.    82116 cached Mem
+--
+top - 13:06:09 up 17 min,  1 user,  load average: 0.26, 1.31, 1.11
+Tasks: 128 total,   2 running, 126 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 92.8 us,  6.5 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi,  0.7 si,  0.0 st
+KiB Mem:   2058668 total,  1739188 used,   319480 free,     6484 buffers
+KiB Swap:        0 total,        0 used,        0 free.    82116 cached Mem
+--
+top - 13:06:11 up 17 min,  1 user,  load average: 0.40, 1.33, 1.12
+Tasks: 128 total,   2 running, 126 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 92.0 us,  6.6 sy,  0.0 ni,  0.0 id,  0.0 wa,  0.0 hi,  1.5 si,  0.0 st
+KiB Mem:   2058668 total,  1739188 used,   319480 free,     6484 buffers
+KiB Swap:        0 total,        0 used,        0 free.    82116 cached Mem
+
+
+
+[ IRREGULAR INTERVALS START ]
+
+
+
+--
+top - 13:06:18 up 17 min,  1 user,  load average: 1.50, 1.53, 1.19
+Tasks: 128 total,   2 running, 126 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.6 us, 36.2 sy,  0.0 ni,  0.0 id, 53.6 wa,  0.0 hi,  3.6 si,  0.0 st
+KiB Mem:   2058668 total,  1991740 used,    66928 free,       52 buffers
+KiB Swap:        0 total,        0 used,        0 free.    14624 cached Mem
+--
+top - 13:06:36 up 17 min,  1 user,  load average: 3.24, 1.91, 1.32
+Tasks: 128 total,   3 running, 125 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.6 us, 43.9 sy,  0.0 ni,  0.0 id, 52.5 wa,  0.0 hi,  3.0 si,  0.0 st
+KiB Mem:   2058668 total,  2002348 used,    56320 free,       52 buffers
+KiB Swap:        0 total,        0 used,        0 free.    16424 cached Mem
+
+
+
+[ IRREGULAR INTERVALS END ]
+
+
+
+--
+top - 13:06:44 up 17 min,  1 user,  load average: 3.70, 2.03, 1.36
+Tasks: 128 total,   3 running, 125 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.6 us, 35.7 sy,  0.0 ni,  0.0 id, 60.3 wa,  0.2 hi,  3.2 si,  0.0 st
+KiB Mem:   2058668 total,   510516 used,  1548152 free,       60 buffers
+KiB Swap:        0 total,        0 used,        0 free.    16780 cached Mem
+--
+top - 13:06:46 up 17 min,  1 user,  load average: 4.05, 2.13, 1.39
+Tasks: 125 total,   2 running, 123 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.7 us, 10.7 sy,  0.0 ni,  0.0 id, 86.4 wa,  0.0 hi,  1.1 si,  0.0 st
+KiB Mem:   2058668 total,   510516 used,  1548152 free,       60 buffers
+KiB Swap:        0 total,        0 used,        0 free.    16780 cached Mem
+--
+top - 13:06:48 up 17 min,  1 user,  load average: 4.05, 2.13, 1.39
+Tasks: 124 total,   1 running, 123 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.7 us,  7.5 sy,  0.0 ni,  0.0 id, 90.8 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:   2058668 total,   554468 used,  1504200 free,     1952 buffers
+KiB Swap:        0 total,        0 used,        0 free.    59416 cached Mem
+--
+top - 13:06:50 up 17 min,  1 user,  load average: 4.12, 2.18, 1.41
+Tasks: 124 total,   3 running, 121 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.3 us,  3.8 sy,  0.0 ni, 38.3 id, 54.1 wa,  0.0 hi,  0.5 si,  0.0 st
+KiB Mem:   2058668 total,   554468 used,  1504200 free,     1952 buffers
+KiB Swap:        0 total,        0 used,        0 free.    59416 cached Mem
+--
+top - 13:06:52 up 17 min,  1 user,  load average: 4.12, 2.18, 1.41
+Tasks: 124 total,   2 running, 122 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.0 us,  1.5 sy,  0.0 ni, 93.8 id,  3.6 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:   2058668 total,   565860 used,  1492808 free,     3392 buffers
+KiB Swap:        0 total,        0 used,        0 free.    68536 cached Mem
+--
+top - 13:06:54 up 17 min,  1 user,  load average: 4.12, 2.18, 1.41
+Tasks: 124 total,   1 running, 123 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9.8 us,  0.5 sy,  0.0 ni, 85.2 id,  4.4 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:   2058668 total,   565860 used,  1492808 free,     3392 buffers
+KiB Swap:        0 total,        0 used,        0 free.    68536 cached Mem
+--
+top - 13:06:56 up 17 min,  1 user,  load average: 3.79, 2.14, 1.41
+Tasks: 124 total,   1 running, 123 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  2.1 us,  1.0 sy,  0.0 ni, 88.1 id,  8.8 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:   2058668 total,   557576 used,  1501092 free,     3392 buffers
+KiB Swap:        0 total,        0 used,        0 free.    69708 cached Mem
