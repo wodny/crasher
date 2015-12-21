@@ -5,10 +5,11 @@ apt-get install libgdk-pixbuf2.0-dev
 make && make test
 ```
 
-In 2010 I noticed that viewing many GIFs in a row using gpicview renders my 
-Linux unresponsive. There is very little I can do in such a situation. Rarely 
-after some minutes the om nom nom killer kicks in and saves the day.  
-Nevertheless, usually I end up using Alt+SysRq+B.
+In 2010 I noticed that viewing many GIFs in a row using gpicview renders 
+my Linux unresponsive. There is very little I can do in such 
+a situation. I cannot switch to another terminal. Rarely after some 
+minutes the om nom nom killer kicks in and saves the day.  Nevertheless, 
+usually I end up using Alt+SysRq+B.
 
 What happens is gpicview exhausting whole available memory in such 
 a pattern that userspace becomes unresponsive. This tool allocates 
@@ -23,7 +24,7 @@ freeing memory, cleaning caches and buffers, and loading some new data
 (see `iostat` logs).
 
 I can observe the most impressive effects on my physical machine 
-(`logs/ph-*`). On my VM (`logs/vm-*`) usually the oomkiller kills the 
+(`logs/ph-*`). On a VM (`logs/vm-*`) usually the oomkiller kills the 
 process after a short time (5-120 seconds).
 
 Logs from the VM have been gathered by piping `top` and `iostat` output 
@@ -44,7 +45,8 @@ Things that seem irrelevant (after testing):
 
   - running the application in Xorg or a TTY,
   - LUKS encryption of the root filesystem,
-  - `vm.oom_kill_allocating_task` setting.
+  - `vm.oom_kill_allocating_task` setting,
+  - using swap space.
 
 
 With 4GB RAM + 256MB swap it needs about 100 iterations.
