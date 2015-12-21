@@ -42,7 +42,7 @@ recoveries after minutes (or never):
 
 Things that seem irrelevant (after testing):
 
-  - running the application/gpicview in Xorg or a TTY,
+  - running the application in Xorg or a TTY,
   - LUKS encryption of the root filesystem,
   - `vm.oom_kill_allocating_task` setting.
 
