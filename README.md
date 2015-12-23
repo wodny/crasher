@@ -41,6 +41,9 @@ is very busy Xorg doesn't get scheduled for running so it doesn't have
 time to acknowledge the switch request. Using SysRq+Alt+R [doesn't
 help][vt-proc-auto].
 
+In both cases invoking OOM killer manually with SysRq+Alt+F is effective 
+and normal system operation is restored almost instantly.
+
 ## OOM killer not triggered
 
 At first I thought that the OOM killer needs so much time to find and 
@@ -79,6 +82,9 @@ primitive scripts and an Android phone connected over wifi.
 
 Notice how the hang prevents scripts from reporting at stable 2-second
 intervals.
+
+There is also the `kern.log` file with a tasks dump (SysRq+Alt+T) and an 
+example of manual OOM killer invocation.
 
 ## Factors
 

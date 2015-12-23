@@ -1,0 +1,1512 @@
+Dec 23 21:03:16 orkisz kernel: [ 7319.119984]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:16 orkisz kernel: [ 7319.119988]  [<ffffffff81403e57>] ? ___sys_recvmsg+0x107/0x2a0
+Dec 23 21:03:17 orkisz kernel: [ 7319.119993]  [<ffffffff810966a3>] ? try_to_wake_up+0xd3/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.119998]  [<ffffffff810d1c6f>] ? futex_wake+0x6f/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.120003]  [<ffffffff811bb157>] ? pollwake+0x67/0x70
+Dec 23 21:03:17 orkisz kernel: [ 7319.120008]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.120012]  [<ffffffff810a73e7>] ? __wake_up_common+0x57/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.120017]  [<ffffffff811ec0b8>] ? eventfd_ctx_read+0x58/0x1e0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120023]  [<ffffffff811a80dd>] ? vfs_read+0xed/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120028]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120033]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.120036] gmain           S ffff88014471b748     0  3289      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120040]  ffff88014471b2f0 0000000000000086 0000000000012f00 ffff88014471ffd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.120045]  0000000000012f00 ffff88014471b2f0 0000000000000000 ffff88014471ff48
+Dec 23 21:03:17 orkisz kernel: [ 7319.120049]  0000000000000000 ffff88014471fbcc ffff88014471fbcc 0000000000000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120054] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.120058]  [<ffffffff8150d6fd>] ? schedule_hrtimeout_range_clock+0x14d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120063]  [<ffffffff810a75b2>] ? remove_wait_queue+0x12/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.120068]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.120073]  [<ffffffff811bc4b2>] ? do_sys_poll+0x422/0x540
+Dec 23 21:03:17 orkisz kernel: [ 7319.120080]  [<ffffffff8114620d>] ? __alloc_pages_nodemask+0x16d/0xb30
+Dec 23 21:03:17 orkisz kernel: [ 7319.120085]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120090]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120094]  [<ffffffff81187dd8>] ? alloc_pages_vma+0x98/0x160
+Dec 23 21:03:17 orkisz kernel: [ 7319.120100]  [<ffffffff811733b7>] ? page_add_new_anon_rmap+0x77/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120104]  [<ffffffff81169951>] ? handle_mm_fault+0xa91/0x11c0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120109]  [<ffffffff8116dbd9>] ? vma_adjust+0x389/0x7b0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120114]  [<ffffffff81057311>] ? __do_page_fault+0x1d1/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120119]  [<ffffffff811ec0b8>] ? eventfd_ctx_read+0x58/0x1e0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120126]  [<ffffffff811a80dd>] ? vfs_read+0xed/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120131]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120136]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.120139] gvfsd-trash     S ffff88014469f178     0  3286      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120143]  ffff88014469ed20 0000000000000082 0000000000012f00 ffff8800977cbfd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.120147]  0000000000012f00 ffff88014469ed20 0000000000000000 ffff8800977cbf48
+Dec 23 21:03:17 orkisz kernel: [ 7319.120152]  0000000000000000 ffff8800977cbbcc ffff8800977cbbcc 0000000000000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120156] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.120161]  [<ffffffff8150d6fd>] ? schedule_hrtimeout_range_clock+0x14d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120167]  [<ffffffff8108aa10>] ? hrtimer_get_res+0x50/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.120171]  [<ffffffff8150d654>] ? schedule_hrtimeout_range_clock+0xa4/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120175]  [<ffffffff810a75b2>] ? remove_wait_queue+0x12/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.120180]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.120185]  [<ffffffff811bc4b2>] ? do_sys_poll+0x422/0x540
+Dec 23 21:03:17 orkisz kernel: [ 7319.120190]  [<ffffffff81187dd8>] ? alloc_pages_vma+0x98/0x160
+Dec 23 21:03:17 orkisz kernel: [ 7319.120195]  [<ffffffff811733b7>] ? page_add_new_anon_rmap+0x77/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120200]  [<ffffffff81169951>] ? handle_mm_fault+0xa91/0x11c0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120205]  [<ffffffff811e2728>] ? mounts_open_common+0xe8/0x200
+Dec 23 21:03:17 orkisz kernel: [ 7319.120211]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120216]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120219]  [<ffffffff81094225>] ? check_preempt_curr+0x85/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120223]  [<ffffffff81094254>] ? ttwu_do_wakeup+0x14/0xd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120228]  [<ffffffff810966a3>] ? try_to_wake_up+0xd3/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120232]  [<ffffffff811bb157>] ? pollwake+0x67/0x70
+Dec 23 21:03:17 orkisz kernel: [ 7319.120237]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.120241]  [<ffffffff810a73e7>] ? __wake_up_common+0x57/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.120246]  [<ffffffff810a7624>] ? __wake_up+0x34/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.120251]  [<ffffffff811ec0b8>] ? eventfd_ctx_read+0x58/0x1e0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120255]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.120260]  [<ffffffff811ec277>] ? eventfd_read+0x37/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.120266]  [<ffffffff811a8083>] ? vfs_read+0x93/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120271]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120276]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.120279] gdbus           S ffff88014471adf8     0  3290      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120282]  ffff88014471a9a0 0000000000000082 0000000000012f00 ffff880144723fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.120287]  0000000000012f00 ffff88014471a9a0 0000000000000000 ffff880144723f48
+Dec 23 21:03:17 orkisz kernel: [ 7319.120291]  0000000000000000 ffff880144723bdc ffff880144723bdc 0000000000000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120296] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.120300]  [<ffffffff8150d6fd>] ? schedule_hrtimeout_range_clock+0x14d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120304]  [<ffffffff81094225>] ? check_preempt_curr+0x85/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120308]  [<ffffffff81094254>] ? ttwu_do_wakeup+0x14/0xd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120312]  [<ffffffff810a7535>] ? add_wait_queue+0x15/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.120317]  [<ffffffff814b1dd5>] ? unix_poll+0x25/0xb0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120322]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.120327]  [<ffffffff811bc4b2>] ? do_sys_poll+0x422/0x540
+Dec 23 21:03:17 orkisz kernel: [ 7319.120332]  [<ffffffff814046ca>] ? sock_recvmsg+0x9a/0xd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120338]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120342]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120347]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120352]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120357]  [<ffffffff810966a3>] ? try_to_wake_up+0xd3/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120361]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120366]  [<ffffffff811bb157>] ? pollwake+0x67/0x70
+Dec 23 21:03:17 orkisz kernel: [ 7319.120371]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.120375]  [<ffffffff810a73e7>] ? __wake_up_common+0x57/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.120380]  [<ffffffff811ec0b8>] ? eventfd_ctx_read+0x58/0x1e0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120386]  [<ffffffff811a80dd>] ? vfs_read+0xed/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120391]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120396]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.120399] gmain           S ffff88014471a4a8     0  3291      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120403]  ffff88014471a050 0000000000000082 0000000000012f00 ffff880144727fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.120407]  0000000000012f00 ffff88014471a050 0000000000000000 ffff880144727f48
+Dec 23 21:03:17 orkisz kernel: [ 7319.120412]  0000000000000000 ffff880144727bcc ffff880144727bcc 0000000000000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120417] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.120421]  [<ffffffff8150d6fd>] ? schedule_hrtimeout_range_clock+0x14d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120427]  [<ffffffff8108aa10>] ? hrtimer_get_res+0x50/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.120431]  [<ffffffff8150d654>] ? schedule_hrtimeout_range_clock+0xa4/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120436]  [<ffffffff810a75b2>] ? remove_wait_queue+0x12/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.120441]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.120445]  [<ffffffff811bc4b2>] ? do_sys_poll+0x422/0x540
+Dec 23 21:03:17 orkisz kernel: [ 7319.120452]  [<ffffffff8114620d>] ? __alloc_pages_nodemask+0x16d/0xb30
+Dec 23 21:03:17 orkisz kernel: [ 7319.120458]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120463]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120469]  [<ffffffff8109f606>] ? check_preempt_wakeup+0x106/0x1d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120473]  [<ffffffff81094225>] ? check_preempt_curr+0x85/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120476]  [<ffffffff81094254>] ? ttwu_do_wakeup+0x14/0xd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120481]  [<ffffffff810966a3>] ? try_to_wake_up+0xd3/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120485]  [<ffffffff8150da01>] ? __schedule+0x2b1/0x710
+Dec 23 21:03:17 orkisz kernel: [ 7319.120489]  [<ffffffff811bb157>] ? pollwake+0x67/0x70
+Dec 23 21:03:17 orkisz kernel: [ 7319.120494]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.120498]  [<ffffffff810a73e7>] ? __wake_up_common+0x57/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.120504]  [<ffffffff811e2c9c>] ? fsnotify+0x23c/0x300
+Dec 23 21:03:17 orkisz kernel: [ 7319.120510]  [<ffffffff811a82b4>] ? vfs_write+0x154/0x1f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120516]  [<ffffffff811a8083>] ? vfs_read+0x93/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120521]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120526]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.120528] x-terminal-emul S ffff880144728e38     0  3299   3146 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120532]  ffff8801447289e0 0000000000000086 0000000000012f00 ffff88014476bfd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.120537]  0000000000012f00 ffff8801447289e0 ffff88014476bec8 00000000038f9b17
+Dec 23 21:03:17 orkisz kernel: [ 7319.120541]  0000000000000000 ffff8800977db6a0 ffff8801447289e0 ffff88014476bec8
+Dec 23 21:03:17 orkisz kernel: [ 7319.120546] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.120550]  [<ffffffff8150d6dd>] ? schedule_hrtimeout_range_clock+0x12d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120556]  [<ffffffff8108aa10>] ? hrtimer_get_res+0x50/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.120561]  [<ffffffff8150d654>] ? schedule_hrtimeout_range_clock+0xa4/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120565]  [<ffffffff811e873a>] ? ep_poll+0x25a/0x340
+Dec 23 21:03:17 orkisz kernel: [ 7319.120570]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.120574]  [<ffffffff811e9bc4>] ? SyS_epoll_wait+0xb4/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120579]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.120582] x-terminal-emul S ffff88009185d7c8     0  3300   3299 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120586]  ffff88009185d370 0000000000000082 0000000000012f00 ffff8801447affd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.120591]  0000000000012f00 ffff88009185d370 7fffffffffffffff ffff8801447afce0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120596]  ffff88009185d370 0000000000000000 ffff880097767c10 ffff880097767b80
+Dec 23 21:03:17 orkisz kernel: [ 7319.120600] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.120604]  [<ffffffff8150d339>] ? schedule_timeout+0x229/0x2a0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120610]  [<ffffffff811754c4>] ? __insert_vmap_area+0x74/0xc0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120616]  [<ffffffff811759d4>] ? vmap_page_range_noflush+0x274/0x390
+Dec 23 21:03:17 orkisz kernel: [ 7319.120622]  [<ffffffff814b29c9>] ? unix_stream_recvmsg+0x289/0x7f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120627]  [<ffffffff810a7a40>] ? prepare_to_wait_event+0xf0/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120632]  [<ffffffff8140328e>] ? sock_aio_read.part.7+0xfe/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.120638]  [<ffffffff811a787c>] ? do_sync_read+0x5c/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.120645]  [<ffffffff811a8125>] ? vfs_read+0x135/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120650]  [<ffffffff811a8cb2>] ? SyS_read+0x42/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120656]  [<ffffffff815136e8>] ? page_fault+0x28/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.120661]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.120664] bash            S ffff880144729788     0  3301   3299 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120668]  ffff880144729330 0000000000000086 0000000000012f00 ffff8800977d3fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.120673]  0000000000012f00 ffff880144729330 ffff8800977d3f08 ffff8801447296b0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120677]  ffff880144729330 ffff880144729330 ffff880144729330 ffff880144729320
+Dec 23 21:03:17 orkisz kernel: [ 7319.120682] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.120688]  [<ffffffff81069549>] ? do_wait+0x1d9/0x230
+Dec 23 21:03:17 orkisz kernel: [ 7319.120694]  [<ffffffff8106a5a7>] ? SyS_wait4+0x67/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120699]  [<ffffffff810683a0>] ? task_stopped_code+0x60/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.120704]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.120707] mutt            S ffff88009185c528     0  3309   3301 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120711]  ffff88009185c0d0 0000000000000086 0000000000012f00 ffff880144747fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.120715]  0000000000012f00 ffff88009185c0d0 ffff880144747af8 0000000001c9c37f
+Dec 23 21:03:17 orkisz kernel: [ 7319.120720]  0000000000000000 0000000000000002 0000000000000001 0000000000000001
+Dec 23 21:03:17 orkisz kernel: [ 7319.120724] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.120729]  [<ffffffff8150d6dd>] ? schedule_hrtimeout_range_clock+0x12d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120735]  [<ffffffff8108aa10>] ? hrtimer_get_res+0x50/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.120739]  [<ffffffff8150d654>] ? schedule_hrtimeout_range_clock+0xa4/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120744]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.120749]  [<ffffffff811bb92e>] ? do_select+0x5ae/0x770
+Dec 23 21:03:17 orkisz kernel: [ 7319.120755]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120760]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120765]  [<ffffffff810ff32c>] ? delayacct_end+0x7c/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.120769]  [<ffffffff8113ca80>] ? sleep_on_page+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.120773]  [<ffffffff8150e4f7>] ? __wait_on_bit+0x77/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.120778]  [<ffffffff8113efff>] ? wait_on_page_bit_killable+0x7f/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.120783]  [<ffffffff810a7a70>] ? autoremove_wake_function+0x30/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.120788]  [<ffffffff811a0371>] ? mem_cgroup_update_page_stat+0x11/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.120793]  [<ffffffff81173517>] ? page_add_file_rmap+0x67/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120798]  [<ffffffff8113f2db>] ? filemap_fault+0x21b/0x420
+Dec 23 21:03:17 orkisz kernel: [ 7319.120803]  [<ffffffff81167c42>] ? do_set_pte+0xa2/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120809]  [<ffffffff8109f620>] ? check_preempt_wakeup+0x120/0x1d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120813]  [<ffffffff81094225>] ? check_preempt_curr+0x85/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120816]  [<ffffffff81094254>] ? ttwu_do_wakeup+0x14/0xd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120821]  [<ffffffff811bbc78>] ? core_sys_select+0x188/0x280
+Dec 23 21:03:17 orkisz kernel: [ 7319.120826]  [<ffffffff81367bca>] ? n_tty_write+0x37a/0x4e0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120832]  [<ffffffff8109c22e>] ? update_curr+0x5e/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.120837]  [<ffffffff8109ceb7>] ? put_prev_entity+0x57/0x350
+Dec 23 21:03:17 orkisz kernel: [ 7319.120842]  [<ffffffff8109bd26>] ? set_next_entity+0x56/0x70
+Dec 23 21:03:17 orkisz kernel: [ 7319.120848]  [<ffffffff810a2b01>] ? pick_next_task_fair+0x6e1/0x820
+Dec 23 21:03:17 orkisz kernel: [ 7319.120853]  [<ffffffff8107943c>] ? do_sigaction+0x6c/0x1d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120858]  [<ffffffff8101b555>] ? read_tsc+0x5/0x20
+Dec 23 21:03:17 orkisz kernel: [ 7319.120864]  [<ffffffff810c7a12>] ? ktime_get_ts+0x42/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120869]  [<ffffffff811bbe1a>] ? SyS_select+0xaa/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120874]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.120877] bash            S ffff8800918c2f38     0  3317   3299 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120881]  ffff8800918c2ae0 0000000000000082 0000000000012f00 ffff88009a4cffd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.120885]  0000000000012f00 ffff8800918c2ae0 ffff88009a4cff08 ffff8800918c2e60
+Dec 23 21:03:17 orkisz kernel: [ 7319.120890]  ffff8800918c2ae0 ffff8800918c2ae0 ffff8800918c2ae0 ffff8800918c2ad0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120895] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.120900]  [<ffffffff81069549>] ? do_wait+0x1d9/0x230
+Dec 23 21:03:17 orkisz kernel: [ 7319.120906]  [<ffffffff8106a5a7>] ? SyS_wait4+0x67/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120911]  [<ffffffff810683a0>] ? task_stopped_code+0x60/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.120917]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.120919] mutt            S ffff8800368f6ef8     0  3323   3317 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.120923]  ffff8800368f6aa0 0000000000000086 0000000000012f00 ffff8801447e3fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.120928]  0000000000012f00 ffff8800368f6aa0 ffff8801447e3af8 0000000001c9c37f
+Dec 23 21:03:17 orkisz kernel: [ 7319.120932]  0000000000000000 0000000000000002 0000000000000001 0000000000000001
+Dec 23 21:03:17 orkisz kernel: [ 7319.120937] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.120941]  [<ffffffff8150d6dd>] ? schedule_hrtimeout_range_clock+0x12d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120947]  [<ffffffff8108aa10>] ? hrtimer_get_res+0x50/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.120951]  [<ffffffff8150d654>] ? schedule_hrtimeout_range_clock+0xa4/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.120956]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.120961]  [<ffffffff811bb92e>] ? do_select+0x5ae/0x770
+Dec 23 21:03:17 orkisz kernel: [ 7319.120968]  [<ffffffff8143ee43>] ? sch_direct_xmit+0x63/0x1a0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120974]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120979]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.120984]  [<ffffffff811d82b3>] ? __find_get_block+0x223/0x250
+Dec 23 21:03:17 orkisz kernel: [ 7319.120991]  [<ffffffff811b1d5e>] ? lookup_fast+0x3e/0x2b0
+Dec 23 21:03:17 orkisz kernel: [ 7319.120995]  [<ffffffff811b30e6>] ? link_path_walk+0x2b6/0x8c0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121016]  [<ffffffffa01ff2be>] ? ext4fs_dirhash+0xae/0x2a0 [ext4]
+Dec 23 21:03:17 orkisz kernel: [ 7319.121021]  [<ffffffff811b374b>] ? path_lookupat+0x5b/0x7b0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121037]  [<ffffffffa01e7aa9>] ? htree_dirblock_to_tree+0x139/0x190 [ext4]
+Dec 23 21:03:17 orkisz kernel: [ 7319.121043]  [<ffffffff811bbc78>] ? core_sys_select+0x188/0x280
+Dec 23 21:03:17 orkisz kernel: [ 7319.121058]  [<ffffffffa01d7dac>] ? ext4_readdir+0x2c/0x8d0 [ext4]
+Dec 23 21:03:17 orkisz kernel: [ 7319.121073]  [<ffffffffa01d799f>] ? free_rb_tree_fname+0x4f/0x70 [ext4]
+Dec 23 21:03:17 orkisz kernel: [ 7319.121079]  [<ffffffff812b7668>] ? lockref_put_or_lock+0x48/0x80
+Dec 23 21:03:17 orkisz kernel: [ 7319.121083]  [<ffffffff8107943c>] ? do_sigaction+0x6c/0x1d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121088]  [<ffffffff8101b555>] ? read_tsc+0x5/0x20
+Dec 23 21:03:17 orkisz kernel: [ 7319.121094]  [<ffffffff810c7a12>] ? ktime_get_ts+0x42/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121099]  [<ffffffff811bbe1a>] ? SyS_select+0xaa/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121105]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.121108] login           S ffff880091bac728     0  3801      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121112]  ffff880091bac2d0 0000000000000086 0000000000012f00 ffff88007c9e7fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.121116]  0000000000012f00 ffff880091bac2d0 ffff88007c9e7f08 ffff880091bac650
+Dec 23 21:03:17 orkisz kernel: [ 7319.121121]  ffff880091bac2d0 ffff880091bac2d0 ffff880091bac2d0 ffff880091bac2c0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121125] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.121131]  [<ffffffff81069549>] ? do_wait+0x1d9/0x230
+Dec 23 21:03:17 orkisz kernel: [ 7319.121137]  [<ffffffff8106a5a7>] ? SyS_wait4+0x67/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121142]  [<ffffffff810683a0>] ? task_stopped_code+0x60/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.121147]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.121150] bash            S ffff880140107808     0  3824   3801 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121154]  ffff8801401073b0 0000000000000086 0000000000012f00 ffff8800a9e63fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.121159]  0000000000012f00 ffff8801401073b0 ffff8801498c00d8 ffff8800a9e63dd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121164]  00007fffb5511db7 7fffffffffffffff ffff8801401073b0 ffffc90018cc0000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121168] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.121172]  [<ffffffff8150d339>] ? schedule_timeout+0x229/0x2a0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121177]  [<ffffffff81368d9e>] ? n_tty_read+0x4ae/0xb40
+Dec 23 21:03:17 orkisz kernel: [ 7319.121183]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.121189]  [<ffffffff81364298>] ? tty_read+0x88/0x100
+Dec 23 21:03:17 orkisz kernel: [ 7319.121196]  [<ffffffff811a8083>] ? vfs_read+0x93/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.121202]  [<ffffffff811a8cb2>] ? SyS_read+0x42/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121207]  [<ffffffff815136e8>] ? page_fault+0x28/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.121212]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.121215] gvfsd-metadata  S ffff88007c8aa768     0  4009      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121219]  ffff88007c8aa310 0000000000000086 0000000000012f00 ffff88007c8effd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.121223]  0000000000012f00 ffff88007c8aa310 0000000000000000 ffff88007c8eff48
+Dec 23 21:03:17 orkisz kernel: [ 7319.121228]  0000000000000000 ffff88007c8efbc4 ffff88007c8efbc4 0000000000000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121232] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.121237]  [<ffffffff8150d6fd>] ? schedule_hrtimeout_range_clock+0x14d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.121242]  [<ffffffff8115abc5>] ? zone_statistics+0x85/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.121247]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.121252]  [<ffffffff811bc4b2>] ? do_sys_poll+0x422/0x540
+Dec 23 21:03:17 orkisz kernel: [ 7319.121258]  [<ffffffff8114620d>] ? __alloc_pages_nodemask+0x16d/0xb30
+Dec 23 21:03:17 orkisz kernel: [ 7319.121271]  [<ffffffffa01b0634>] ? __jbd2_journal_file_buffer+0x94/0x220 [jbd2]
+Dec 23 21:03:17 orkisz kernel: [ 7319.121276]  [<ffffffff811d8144>] ? __find_get_block+0xb4/0x250
+Dec 23 21:03:17 orkisz kernel: [ 7319.121288]  [<ffffffffa01b0690>] ? __jbd2_journal_file_buffer+0xf0/0x220 [jbd2]
+Dec 23 21:03:17 orkisz kernel: [ 7319.121300]  [<ffffffffa01b1000>] ? jbd2_journal_dirty_metadata+0xc0/0x290 [jbd2]
+Dec 23 21:03:17 orkisz kernel: [ 7319.121312]  [<ffffffffa01b0af6>] ? do_get_write_access+0x336/0x4e0 [jbd2]
+Dec 23 21:03:17 orkisz kernel: [ 7319.121316]  [<ffffffff811d830a>] ? __getblk+0x2a/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121321]  [<ffffffff811a0371>] ? mem_cgroup_update_page_stat+0x11/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.121327]  [<ffffffff81173517>] ? page_add_file_rmap+0x67/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121332]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.121337]  [<ffffffff81167f22>] ? do_read_fault.isra.54+0x2a2/0x300
+Dec 23 21:03:17 orkisz kernel: [ 7319.121341]  [<ffffffff811696df>] ? handle_mm_fault+0x81f/0x11c0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121346]  [<ffffffff8116d80a>] ? vma_link+0x7a/0xc0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121352]  [<ffffffff8116f97c>] ? mmap_region+0x19c/0x650
+Dec 23 21:03:17 orkisz kernel: [ 7319.121357]  [<ffffffff81057311>] ? __do_page_fault+0x1d1/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121362]  [<ffffffff8109c22e>] ? update_curr+0x5e/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.121368]  [<ffffffff8109ceb7>] ? put_prev_entity+0x57/0x350
+Dec 23 21:03:17 orkisz kernel: [ 7319.121373]  [<ffffffff810115dc>] ? __switch_to+0x15c/0x570
+Dec 23 21:03:17 orkisz kernel: [ 7319.121379]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121384]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.121387] gdbus           S ffff8800a9bc6eb8     0  4010      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121391]  ffff8800a9bc6a60 0000000000000086 0000000000012f00 ffff8801400affd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.121395]  0000000000012f00 ffff8800a9bc6a60 0000000000000000 ffff8801400aff48
+Dec 23 21:03:17 orkisz kernel: [ 7319.121400]  0000000000000000 ffff8801400afbcc ffff8801400afbcc 0000000000000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121404] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.121409]  [<ffffffff8150d6fd>] ? schedule_hrtimeout_range_clock+0x14d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.121413]  [<ffffffff8140cc48>] ? __alloc_skb+0x48/0x2a0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121417]  [<ffffffff810966a3>] ? try_to_wake_up+0xd3/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121422]  [<ffffffff810a7535>] ? add_wait_queue+0x15/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.121427]  [<ffffffff814b1dd5>] ? unix_poll+0x25/0xb0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121432]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.121437]  [<ffffffff811bc4b2>] ? do_sys_poll+0x422/0x540
+Dec 23 21:03:17 orkisz kernel: [ 7319.121443]  [<ffffffff81406c16>] ? sock_def_readable+0x36/0x70
+Dec 23 21:03:17 orkisz kernel: [ 7319.121448]  [<ffffffff814b2705>] ? unix_stream_sendmsg+0x3d5/0x410
+Dec 23 21:03:17 orkisz kernel: [ 7319.121453]  [<ffffffff8140443b>] ? sock_sendmsg+0x8b/0xc0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121458]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.121463]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.121468]  [<ffffffff81404c09>] ? ___sys_sendmsg+0x389/0x3a0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121472]  [<ffffffff810966a3>] ? try_to_wake_up+0xd3/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121478]  [<ffffffff810d1c6f>] ? futex_wake+0x6f/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.121483]  [<ffffffff811bb157>] ? pollwake+0x67/0x70
+Dec 23 21:03:17 orkisz kernel: [ 7319.121487]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.121492]  [<ffffffff810a73e7>] ? __wake_up_common+0x57/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.121497]  [<ffffffff811ec0b8>] ? eventfd_ctx_read+0x58/0x1e0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121502]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121507]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.121510] scp-dbus-servic S ffff880140282468     0  4528      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121514]  ffff880140282010 0000000000000086 0000000000012f00 ffff88007c967fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.121518]  0000000000012f00 ffff880140282010 0000000000000000 ffff88007c967f48
+Dec 23 21:03:17 orkisz kernel: [ 7319.121523]  0000000000000000 ffff88007c967be4 ffff88007c967be4 0000000000000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121527] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.121532]  [<ffffffff8150d6fd>] ? schedule_hrtimeout_range_clock+0x14d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.121536]  [<ffffffff810a791d>] ? __wake_up_sync_key+0x3d/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.121541]  [<ffffffff810a7535>] ? add_wait_queue+0x15/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.121546]  [<ffffffff814b1dd5>] ? unix_poll+0x25/0xb0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121550]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.121555]  [<ffffffff811bc4b2>] ? do_sys_poll+0x422/0x540
+Dec 23 21:03:17 orkisz kernel: [ 7319.121561]  [<ffffffff8113efff>] ? wait_on_page_bit_killable+0x7f/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.121566]  [<ffffffff814046ca>] ? sock_recvmsg+0x9a/0xd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121571]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.121576]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.121581]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.121586]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.121591]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.121596]  [<ffffffff81057311>] ? __do_page_fault+0x1d1/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121600]  [<ffffffff8140483b>] ? SYSC_recvfrom+0xfb/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.121606]  [<ffffffff810115dc>] ? __switch_to+0x15c/0x570
+Dec 23 21:03:17 orkisz kernel: [ 7319.121611]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121616]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.121619] scp-dbus-servic S ffff880091b77ac8     0  4533      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121624]  ffff880091b77670 0000000000000086 0000000000012f00 ffff8800a8e07fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.121628]  0000000000012f00 ffff880091b77670 ffff880091b77670 ffff880091b77670
+Dec 23 21:03:17 orkisz kernel: [ 7319.121633]  0000000000000000 ffffc900047729c0 ffff8800a8e07d58 ffff880091b77670
+Dec 23 21:03:17 orkisz kernel: [ 7319.121637] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.121643]  [<ffffffff810d176c>] ? futex_wait_queue_me+0xcc/0x130
+Dec 23 21:03:17 orkisz kernel: [ 7319.121649]  [<ffffffff810d1a42>] ? futex_wait+0x162/0x260
+Dec 23 21:03:17 orkisz kernel: [ 7319.121655]  [<ffffffff810d1bdd>] ? wake_futex+0x5d/0x80
+Dec 23 21:03:17 orkisz kernel: [ 7319.121660]  [<ffffffff810d1c6f>] ? futex_wake+0x6f/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.121666]  [<ffffffff810d3bc2>] ? do_futex+0xf2/0xb60
+Dec 23 21:03:17 orkisz kernel: [ 7319.121671]  [<ffffffff81057311>] ? __do_page_fault+0x1d1/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121676]  [<ffffffff8109ceb7>] ? put_prev_entity+0x57/0x350
+Dec 23 21:03:17 orkisz kernel: [ 7319.121682]  [<ffffffff8109bd26>] ? set_next_entity+0x56/0x70
+Dec 23 21:03:17 orkisz kernel: [ 7319.121687]  [<ffffffff810a2b01>] ? pick_next_task_fair+0x6e1/0x820
+Dec 23 21:03:17 orkisz kernel: [ 7319.121693]  [<ffffffff810115dc>] ? __switch_to+0x15c/0x570
+Dec 23 21:03:17 orkisz kernel: [ 7319.121699]  [<ffffffff810d469e>] ? SyS_futex+0x6e/0x150
+Dec 23 21:03:17 orkisz kernel: [ 7319.121704]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.121707] gdbus           S ffff88007c97d848     0  4538      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121711]  ffff88007c97d3f0 0000000000000086 0000000000012f00 ffff88014a7bbfd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.121715]  0000000000012f00 ffff88007c97d3f0 0000000000000000 ffff88014a7bbf48
+Dec 23 21:03:17 orkisz kernel: [ 7319.121720]  0000000000000000 ffff88014a7bbbcc ffff88014a7bbbcc 0000000000000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121724] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.121729]  [<ffffffff8150d6fd>] ? schedule_hrtimeout_range_clock+0x14d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.121734]  [<ffffffff810a791d>] ? __wake_up_sync_key+0x3d/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.121738]  [<ffffffff810a7535>] ? add_wait_queue+0x15/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.121743]  [<ffffffff814b1dd5>] ? unix_poll+0x25/0xb0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121748]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.121752]  [<ffffffff811bc4b2>] ? do_sys_poll+0x422/0x540
+Dec 23 21:03:17 orkisz kernel: [ 7319.121758]  [<ffffffff811a0371>] ? mem_cgroup_update_page_stat+0x11/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.121764]  [<ffffffff81173517>] ? page_add_file_rmap+0x67/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121769]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.121774]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.121779]  [<ffffffff811696df>] ? handle_mm_fault+0x81f/0x11c0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121783]  [<ffffffff81094254>] ? ttwu_do_wakeup+0x14/0xd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121787]  [<ffffffff810966a3>] ? try_to_wake_up+0xd3/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121792]  [<ffffffff810d1c6f>] ? futex_wake+0x6f/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.121797]  [<ffffffff81057311>] ? __do_page_fault+0x1d1/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121802]  [<ffffffff811ec0b8>] ? eventfd_ctx_read+0x58/0x1e0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121809]  [<ffffffff811a80dd>] ? vfs_read+0xed/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.121814]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121819]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.121822] scp-dbus-servic S ffff8800a9fcefb8     0  4541      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121826]  ffff8800a9fceb60 0000000000000086 0000000000012f00 ffff8800a739ffd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.121831]  0000000000012f00 ffff8800a9fceb60 ffff8800a9fceb60 ffff8800a9fceb60
+Dec 23 21:03:17 orkisz kernel: [ 7319.121836]  0000000000000000 ffffc90004763a40 ffff8800a739fd58 ffff8800a9fceb60
+Dec 23 21:03:17 orkisz kernel: [ 7319.121840] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.121846]  [<ffffffff810d176c>] ? futex_wait_queue_me+0xcc/0x130
+Dec 23 21:03:17 orkisz kernel: [ 7319.121852]  [<ffffffff810d1a42>] ? futex_wait+0x162/0x260
+Dec 23 21:03:17 orkisz kernel: [ 7319.121859]  [<ffffffff811e503b>] ? inotify_handle_event+0xab/0x160
+Dec 23 21:03:17 orkisz kernel: [ 7319.121864]  [<ffffffff811e2984>] ? send_to_group+0xd4/0x1b0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121870]  [<ffffffff810d3bc2>] ? do_futex+0xf2/0xb60
+Dec 23 21:03:17 orkisz kernel: [ 7319.121875]  [<ffffffff811e2c9c>] ? fsnotify+0x23c/0x300
+Dec 23 21:03:17 orkisz kernel: [ 7319.121881]  [<ffffffff811e2c9c>] ? fsnotify+0x23c/0x300
+Dec 23 21:03:17 orkisz kernel: [ 7319.121887]  [<ffffffff810d469e>] ? SyS_futex+0x6e/0x150
+Dec 23 21:03:17 orkisz kernel: [ 7319.121891]  [<ffffffff811a8d76>] ? SyS_write+0x66/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121896]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.121898] kworker/0:0     S ffff880140106eb8     0  5092      2 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121910]  ffff880140106a60 0000000000000046 0000000000012f00 ffff880076377fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.121914]  0000000000012f00 ffff880140106a60 ffff88014f212700 ffff88014f212718
+Dec 23 21:03:17 orkisz kernel: [ 7319.121919]  ffff880140106a60 ffff880140106a60 ffff88009a715700 ffff88009a715730
+Dec 23 21:03:17 orkisz kernel: [ 7319.121923] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.121928]  [<ffffffff81081d67>] ? worker_thread+0x187/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121932]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121938]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.121944]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.121949]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.121954]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.121957] x-terminal-emul S ffff88009185ce78     0  5235   3146 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.121961]  ffff88009185ca20 0000000000000086 0000000000012f00 ffff88012e4a7fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.121966]  0000000000012f00 ffff88009185ca20 ffff88012e4a7ec8 00000000038f9b17
+Dec 23 21:03:17 orkisz kernel: [ 7319.121970]  0000000000000000 ffff88009a403160 ffff88009185ca20 ffff88012e4a7ec8
+Dec 23 21:03:17 orkisz kernel: [ 7319.121975] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.121979]  [<ffffffff8150d6dd>] ? schedule_hrtimeout_range_clock+0x12d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.121985]  [<ffffffff8108aa10>] ? hrtimer_get_res+0x50/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.121990]  [<ffffffff8150d654>] ? schedule_hrtimeout_range_clock+0xa4/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.121994]  [<ffffffff811e873a>] ? ep_poll+0x25a/0x340
+Dec 23 21:03:17 orkisz kernel: [ 7319.121999]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.122003]  [<ffffffff811e9bc4>] ? SyS_epoll_wait+0xb4/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122009]  [<ffffffff815136e8>] ? page_fault+0x28/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.122014]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.122017] x-terminal-emul S ffff880148eb04e8     0  5236   5235 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122021]  ffff880148eb0090 0000000000000086 0000000000012f00 ffff880144797fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122026]  0000000000012f00 ffff880148eb0090 7fffffffffffffff ffff880144797ce0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122030]  ffff880148eb0090 0000000000000000 ffff8800919991d0 ffff880091999140
+Dec 23 21:03:17 orkisz kernel: [ 7319.122035] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122039]  [<ffffffff8150d339>] ? schedule_timeout+0x229/0x2a0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122045]  [<ffffffff811754c4>] ? __insert_vmap_area+0x74/0xc0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122051]  [<ffffffff811759d4>] ? vmap_page_range_noflush+0x274/0x390
+Dec 23 21:03:17 orkisz kernel: [ 7319.122056]  [<ffffffff814b29c9>] ? unix_stream_recvmsg+0x289/0x7f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122061]  [<ffffffff81094254>] ? ttwu_do_wakeup+0x14/0xd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122066]  [<ffffffff810a7a40>] ? prepare_to_wait_event+0xf0/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122070]  [<ffffffff8140328e>] ? sock_aio_read.part.7+0xfe/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.122077]  [<ffffffff811a787c>] ? do_sync_read+0x5c/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.122083]  [<ffffffff811a8125>] ? vfs_read+0x135/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.122089]  [<ffffffff811a8cb2>] ? SyS_read+0x42/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122094]  [<ffffffff8151198a>] ? int_signal+0x12/0x17
+Dec 23 21:03:17 orkisz kernel: [ 7319.122099]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.122102] bash            S ffff88007c97c5a8     0  5237   5235 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122106]  ffff88007c97c150 0000000000000082 0000000000012f00 ffff88014026ffd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122110]  0000000000012f00 ffff88007c97c150 ffff880091826cd8 ffff88014026fdd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122115]  00007ffc05c3c167 7fffffffffffffff ffff88007c97c150 ffffc9001716d000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122120] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122124]  [<ffffffff8150d339>] ? schedule_timeout+0x229/0x2a0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122128]  [<ffffffff81094225>] ? check_preempt_curr+0x85/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122132]  [<ffffffff81094254>] ? ttwu_do_wakeup+0x14/0xd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122136]  [<ffffffff810966a3>] ? try_to_wake_up+0xd3/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122140]  [<ffffffff81368d9e>] ? n_tty_read+0x4ae/0xb40
+Dec 23 21:03:17 orkisz kernel: [ 7319.122145]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.122152]  [<ffffffff81364298>] ? tty_read+0x88/0x100
+Dec 23 21:03:17 orkisz kernel: [ 7319.122158]  [<ffffffff811a8083>] ? vfs_read+0x93/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.122163]  [<ffffffff811a8cb2>] ? SyS_read+0x42/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122169]  [<ffffffff815136e8>] ? page_fault+0x28/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.122174]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.122177] upowerd         S ffff880097750eb8     0  5291      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122181]  ffff880097750a60 0000000000000086 0000000000012f00 ffff880091983fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122185]  0000000000012f00 ffff880097750a60 ffff880091983ba8 0000000005f5e100
+Dec 23 21:03:17 orkisz kernel: [ 7319.122190]  0000000000000000 ffff880091983bdc ffff880091983bdc 0000000000000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122195] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122199]  [<ffffffff8150d6dd>] ? schedule_hrtimeout_range_clock+0x12d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.122206]  [<ffffffff8108aa10>] ? hrtimer_get_res+0x50/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.122210]  [<ffffffff8150d654>] ? schedule_hrtimeout_range_clock+0xa4/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.122215]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.122220]  [<ffffffff811bc4b2>] ? do_sys_poll+0x422/0x540
+Dec 23 21:03:17 orkisz kernel: [ 7319.122225]  [<ffffffff814b2705>] ? unix_stream_sendmsg+0x3d5/0x410
+Dec 23 21:03:17 orkisz kernel: [ 7319.122230]  [<ffffffff8140443b>] ? sock_sendmsg+0x8b/0xc0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122236]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.122241]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.122246]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.122250]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.122256]  [<ffffffff81057311>] ? __do_page_fault+0x1d1/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122262]  [<ffffffff8101b555>] ? read_tsc+0x5/0x20
+Dec 23 21:03:17 orkisz kernel: [ 7319.122268]  [<ffffffff810c7a12>] ? ktime_get_ts+0x42/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122272]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122277]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.122280] gmain           S ffff8800368f7848     0  5292      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122285]  ffff8800368f73f0 0000000000000086 0000000000012f00 ffff88014033bfd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122289]  0000000000012f00 ffff8800368f73f0 0000000000000000 ffff88014033bf48
+Dec 23 21:03:17 orkisz kernel: [ 7319.122293]  0000000000000000 ffff88014033bbc4 ffff88014033bbc4 0000000000000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122298] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122302]  [<ffffffff8150d6fd>] ? schedule_hrtimeout_range_clock+0x14d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.122308]  [<ffffffff810a75b2>] ? remove_wait_queue+0x12/0x50
+Dec 23 21:03:17 orkisz kernel: [ 7319.122313]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.122317]  [<ffffffff811bc4b2>] ? do_sys_poll+0x422/0x540
+Dec 23 21:03:17 orkisz kernel: [ 7319.122324]  [<ffffffff8114620d>] ? __alloc_pages_nodemask+0x16d/0xb30
+Dec 23 21:03:17 orkisz kernel: [ 7319.122330]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.122334]  [<ffffffff81187dd8>] ? alloc_pages_vma+0x98/0x160
+Dec 23 21:03:17 orkisz kernel: [ 7319.122340]  [<ffffffff811733b7>] ? page_add_new_anon_rmap+0x77/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.122344]  [<ffffffff81169951>] ? handle_mm_fault+0xa91/0x11c0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122349]  [<ffffffff8116cb40>] ? vma_compute_subtree_gap+0x40/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.122354]  [<ffffffff8116dbd9>] ? vma_adjust+0x389/0x7b0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122359]  [<ffffffff81057311>] ? __do_page_fault+0x1d1/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122365]  [<ffffffff811ec0b8>] ? eventfd_ctx_read+0x58/0x1e0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122371]  [<ffffffff811a80dd>] ? vfs_read+0xed/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.122376]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122381]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.122383] gdbus           S ffff880097754828     0  5293      1 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122388]  ffff8800977543d0 0000000000000086 0000000000012f00 ffff8801401cbfd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122392]  0000000000012f00 ffff8800977543d0 0000000000000000 ffff8801401cbf48
+Dec 23 21:03:17 orkisz kernel: [ 7319.122397]  0000000000000000 ffff8801401cbbcc ffff8801401cbbcc 0000000000000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122401] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122406]  [<ffffffff8150d6fd>] ? schedule_hrtimeout_range_clock+0x14d/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.122410]  [<ffffffff810a791d>] ? __wake_up_sync_key+0x3d/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.122415]  [<ffffffff810a7535>] ? add_wait_queue+0x15/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.122420]  [<ffffffff814b1dd5>] ? unix_poll+0x25/0xb0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122425]  [<ffffffff811baf65>] ? poll_schedule_timeout+0x45/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.122429]  [<ffffffff811bc4b2>] ? do_sys_poll+0x422/0x540
+Dec 23 21:03:17 orkisz kernel: [ 7319.122435]  [<ffffffff814046ca>] ? sock_recvmsg+0x9a/0xd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122440]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.122445]  [<ffffffff811bb0f0>] ? poll_select_copy_remaining+0x140/0x140
+Dec 23 21:03:17 orkisz kernel: [ 7319.122451]  [<ffffffff8109f606>] ? check_preempt_wakeup+0x106/0x1d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122455]  [<ffffffff81094225>] ? check_preempt_curr+0x85/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122459]  [<ffffffff81094254>] ? ttwu_do_wakeup+0x14/0xd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122464]  [<ffffffff810966a3>] ? try_to_wake_up+0xd3/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122469]  [<ffffffff810d1c6f>] ? futex_wake+0x6f/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.122474]  [<ffffffff811bb157>] ? pollwake+0x67/0x70
+Dec 23 21:03:17 orkisz kernel: [ 7319.122478]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.122483]  [<ffffffff810a73e7>] ? __wake_up_common+0x57/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.122488]  [<ffffffff811ec0b8>] ? eventfd_ctx_read+0x58/0x1e0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122494]  [<ffffffff811a80dd>] ? vfs_read+0xed/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.122499]  [<ffffffff811bc68d>] ? SyS_poll+0x5d/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122504]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.122507] kworker/1:1     S ffff8800a8f906e8     0  5348      2 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122516]  ffff8800a8f90290 0000000000000046 0000000000012f00 ffff88007c8dbfd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122521]  0000000000012f00 ffff8800a8f90290 ffff88014f252700 ffff88014f252700
+Dec 23 21:03:17 orkisz kernel: [ 7319.122526]  ffff8800a8f90290 ffff8800a8f90290 ffff880091befc40 ffff880091befc70
+Dec 23 21:03:17 orkisz kernel: [ 7319.122530] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122535]  [<ffffffff81081d67>] ? worker_thread+0x187/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122539]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122544]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122550]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122555]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.122561]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122563] kworker/0:1     S ffff880140283708     0  5360      2 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122573]  ffff8801402832b0 0000000000000046 0000000000012f00 ffff8800919fffd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122578]  0000000000012f00 ffff8801402832b0 ffff88014f212700 ffff88014f212718
+Dec 23 21:03:17 orkisz kernel: [ 7319.122582]  ffff8801402832b0 ffff8801402832b0 ffff88012e568f40 ffff88012e568f70
+Dec 23 21:03:17 orkisz kernel: [ 7319.122587] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122591]  [<ffffffff81081d67>] ? worker_thread+0x187/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122595]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122600]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122606]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122610]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.122616]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122619] kworker/u16:0   S ffff88007c82e6a8     0  5400      2 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122628]  ffff88007c82e250 0000000000000046 0000000000012f00 ffff88007c993fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122633]  0000000000012f00 ffff88007c82e250 ffff88014a714c00 ffff88014a714c18
+Dec 23 21:03:17 orkisz kernel: [ 7319.122637]  ffff88007c82e250 ffff88007c82e250 ffff8800918b51c0 ffff88014a714c00
+Dec 23 21:03:17 orkisz kernel: [ 7319.122642] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122646]  [<ffffffff81081d67>] ? worker_thread+0x187/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122650]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122655]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122661]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122666]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.122671]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122674] kworker/1:0     S ffff880091b239c8     0  5426      2 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122684]  ffff880091b23570 0000000000000046 0000000000012f00 ffff8800919dffd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122688]  0000000000012f00 ffff880091b23570 ffff88014f252700 ffff88014f252700
+Dec 23 21:03:17 orkisz kernel: [ 7319.122693]  ffff880091b23570 ffff880091b23570 ffff8800919da040 ffff8800919da070
+Dec 23 21:03:17 orkisz kernel: [ 7319.122697] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122701]  [<ffffffff81081d67>] ? worker_thread+0x187/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122705]  [<ffffffff8150da01>] ? __schedule+0x2b1/0x710
+Dec 23 21:03:17 orkisz kernel: [ 7319.122709]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122714]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122720]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122725]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.122730]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122733] bash            S ffff880148f0d0f8     0  5513   2995 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122737]  ffff880148f0cca0 0000000000000082 0000000000012f00 ffff88007c8bffd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122742]  0000000000012f00 ffff880148f0cca0 ffff8800368698d8 ffff88007c8bfdd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122746]  00007ffcc50a6a47 7fffffffffffffff ffff880148f0cca0 ffffc900048c7000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122751] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122755]  [<ffffffff8150d339>] ? schedule_timeout+0x229/0x2a0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122760]  [<ffffffff81368d9e>] ? n_tty_read+0x4ae/0xb40
+Dec 23 21:03:17 orkisz kernel: [ 7319.122765]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.122771]  [<ffffffff81364298>] ? tty_read+0x88/0x100
+Dec 23 21:03:17 orkisz kernel: [ 7319.122777]  [<ffffffff811a8083>] ? vfs_read+0x93/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.122783]  [<ffffffff811a8cb2>] ? SyS_read+0x42/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122789]  [<ffffffff815136e8>] ? page_fault+0x28/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.122794]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.122797] kworker/0:2     R  running task        0  5525      2 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122806]  ffff88009a547370 0000000000000046 0000000000012f00 ffff88012e4affd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122811]  0000000000012f00 ffff88009a547370 ffff88014f212700 ffff88014f212700
+Dec 23 21:03:17 orkisz kernel: [ 7319.122815]  ffff88009a547370 ffff88009a547370 ffff880140328700 ffff880140328730
+Dec 23 21:03:17 orkisz kernel: [ 7319.122820] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122824]  [<ffffffff81081d67>] ? worker_thread+0x187/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122828]  [<ffffffff8150da01>] ? __schedule+0x2b1/0x710
+Dec 23 21:03:17 orkisz kernel: [ 7319.122832]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122837]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122843]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122848]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.122853]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122856] kworker/u16:3   S ffff8801447284e8     0  5526      2 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122866]  ffff880144728090 0000000000000046 0000000000012f00 ffff880140303fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122870]  0000000000012f00 ffff880144728090 ffff88014a714c00 ffff88014a714c00
+Dec 23 21:03:17 orkisz kernel: [ 7319.122875]  ffff880144728090 ffff880144728090 ffff8800a72a5ac0 ffff8800a72a5af0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122880] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122884]  [<ffffffff81081d67>] ? worker_thread+0x187/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122888]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122893]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122899]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122903]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.122909]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122911] kworker/1:2     S ffff88007c82eff8     0  5582      2 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122921]  ffff88007c82eba0 0000000000000046 0000000000012f00 ffff88007c957fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122925]  0000000000012f00 ffff88007c82eba0 ffff88014f252700 ffff88014f252718
+Dec 23 21:03:17 orkisz kernel: [ 7319.122930]  ffff88007c82eba0 ffff88007c82eba0 ffff880091873f40 ffff880091873f70
+Dec 23 21:03:17 orkisz kernel: [ 7319.122935] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122939]  [<ffffffff81081d67>] ? worker_thread+0x187/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122943]  [<ffffffff8150da01>] ? __schedule+0x2b1/0x710
+Dec 23 21:03:17 orkisz kernel: [ 7319.122947]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122952]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122957]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122962]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.122967]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.122970] x-terminal-emul D ffff8800a9fce668     0  5599   3146 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.122974]  ffff8800a9fce210 0000000000000086 0000000000012f00 ffff88014015bfd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.122979]  0000000000012f00 ffff8800a9fce210 ffff88014f2537b0 ffff88014f5be528
+Dec 23 21:03:17 orkisz kernel: [ 7319.122983]  0000000000000082 ffffffff8113ca80 ffff88014015bc40 ffff880144f4d4b0
+Dec 23 21:03:17 orkisz kernel: [ 7319.122988] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.122993]  [<ffffffff8113ca80>] ? sleep_on_page+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.122997]  [<ffffffff8150e159>] ? io_schedule+0x99/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.123001]  [<ffffffff8113ca8a>] ? sleep_on_page_killable+0xa/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.123005]  [<ffffffff8150e4dc>] ? __wait_on_bit+0x5c/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123011]  [<ffffffff8113efff>] ? wait_on_page_bit_killable+0x7f/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123015]  [<ffffffff810a7a70>] ? autoremove_wake_function+0x30/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.123021]  [<ffffffff8113f0ae>] ? __lock_page_or_retry+0x9e/0xb0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123026]  [<ffffffff8113f2cb>] ? filemap_fault+0x20b/0x420
+Dec 23 21:03:17 orkisz kernel: [ 7319.123030]  [<ffffffff8116510a>] ? __do_fault+0x3a/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123035]  [<ffffffff81167cce>] ? do_read_fault.isra.54+0x4e/0x300
+Dec 23 21:03:17 orkisz kernel: [ 7319.123040]  [<ffffffff811696df>] ? handle_mm_fault+0x81f/0x11c0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123045]  [<ffffffff810572b7>] ? __do_page_fault+0x177/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123050]  [<ffffffff810968f0>] ? wake_up_state+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.123056]  [<ffffffff813642b1>] ? tty_read+0xa1/0x100
+Dec 23 21:03:17 orkisz kernel: [ 7319.123062]  [<ffffffff811a8083>] ? vfs_read+0x93/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.123068]  [<ffffffff815136e8>] ? page_fault+0x28/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.123071] x-terminal-emul S ffff880140282db8     0  5600   5599 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123075]  ffff880140282960 0000000000000082 0000000000012f00 ffff880076167fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123079]  0000000000012f00 ffff880140282960 7fffffffffffffff ffff880076167ce0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123084]  ffff880140282960 0000000000000000 ffff88007c8c5910 ffff88007c8c5880
+Dec 23 21:03:17 orkisz kernel: [ 7319.123088] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.123092]  [<ffffffff8150d339>] ? schedule_timeout+0x229/0x2a0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123098]  [<ffffffff811bdc1f>] ? dput+0x1f/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.123104]  [<ffffffff812af15e>] ? radix_tree_lookup_slot+0xe/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.123109]  [<ffffffff8113cca9>] ? find_get_entry+0x19/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123114]  [<ffffffff8113d15b>] ? find_lock_entry+0x2b/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.123119]  [<ffffffff814b29c9>] ? unix_stream_recvmsg+0x289/0x7f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123124]  [<ffffffff810a7a40>] ? prepare_to_wait_event+0xf0/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123129]  [<ffffffff8140328e>] ? sock_aio_read.part.7+0xfe/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.123134]  [<ffffffff8113ecf8>] ? __generic_file_write_iter+0x158/0x340
+Dec 23 21:03:17 orkisz kernel: [ 7319.123141]  [<ffffffff811a787c>] ? do_sync_read+0x5c/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123147]  [<ffffffff811a8125>] ? vfs_read+0x135/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.123153]  [<ffffffff811a8cb2>] ? SyS_read+0x42/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123158]  [<ffffffff8151198a>] ? int_signal+0x12/0x17
+Dec 23 21:03:17 orkisz kernel: [ 7319.123163]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.123166] bash            S ffff8800a8f91038     0  5601   5599 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123170]  ffff8800a8f90be0 0000000000000082 0000000000012f00 ffff880091a4ffd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123174]  0000000000012f00 ffff8800a8f90be0 ffff880091a4ff08 ffff8800a8f90f60
+Dec 23 21:03:17 orkisz kernel: [ 7319.123179]  ffff8800a8f90be0 ffff8800a8f90be0 ffff8800a8f90be0 ffff8800a8f90bd0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123184] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.123190]  [<ffffffff81069549>] ? do_wait+0x1d9/0x230
+Dec 23 21:03:17 orkisz kernel: [ 7319.123195]  [<ffffffff8106a5a7>] ? SyS_wait4+0x67/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123201]  [<ffffffff810683a0>] ? task_stopped_code+0x60/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.123206]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.123209] kworker/u16:1   S ffff88014007f0b8     0  5627      2 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123219]  ffff88014007ec60 0000000000000046 0000000000012f00 ffff88004d45bfd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123223]  0000000000012f00 ffff88014007ec60 ffff88014a714c00 ffff88014a714c00
+Dec 23 21:03:17 orkisz kernel: [ 7319.123228]  ffff88014007ec60 ffff88014007ec60 ffff8800a9e9f340 ffff8800a9e9f370
+Dec 23 21:03:17 orkisz kernel: [ 7319.123232] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.123237]  [<ffffffff81081d67>] ? worker_thread+0x187/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123241]  [<ffffffff8150da01>] ? __schedule+0x2b1/0x710
+Dec 23 21:03:17 orkisz kernel: [ 7319.123245]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123250]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123255]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.123260]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123266]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.123269] bash            S ffff880097750568     0  5636   5599 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123272]  ffff880097750110 0000000000000086 0000000000012f00 ffff88014a073fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123277]  0000000000012f00 ffff880097750110 ffff88014a073f08 ffff880097750490
+Dec 23 21:03:17 orkisz kernel: [ 7319.123282]  ffff880097750110 ffff880097750110 ffff880097750110 ffff880097750100
+Dec 23 21:03:17 orkisz kernel: [ 7319.123286] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.123292]  [<ffffffff81069549>] ? do_wait+0x1d9/0x230
+Dec 23 21:03:17 orkisz kernel: [ 7319.123298]  [<ffffffff8106a5a7>] ? SyS_wait4+0x67/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123303]  [<ffffffff810683a0>] ? task_stopped_code+0x60/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.123308]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.123311] kworker/u16:2   S ffff880091bad078     0  5643      2 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123321]  ffff880091bacc20 0000000000000046 0000000000012f00 ffff88012e59bfd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123325]  0000000000012f00 ffff880091bacc20 ffff88014a714c00 ffff88014a714c00
+Dec 23 21:03:17 orkisz kernel: [ 7319.123330]  ffff880091bacc20 ffff880091bacc20 ffff88007cb7bac0 ffff88007cb7baf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123335] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.123339]  [<ffffffff81081d67>] ? worker_thread+0x187/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123343]  [<ffffffff8150da01>] ? __schedule+0x2b1/0x710
+Dec 23 21:03:17 orkisz kernel: [ 7319.123347]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123352]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123358]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.123363]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123368]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.123371] kworker/u16:4   S ffff8800a9a3b948     0  5644      2 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123380]  ffff8800a9a3b4f0 0000000000000046 0000000000012f00 ffff880149297fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123385]  0000000000012f00 ffff8800a9a3b4f0 ffff88014a714c00 ffff88014a714c00
+Dec 23 21:03:17 orkisz kernel: [ 7319.123390]  ffff8800a9a3b4f0 ffff8800a9a3b4f0 ffff88009a715880 ffff88009a7158b0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123394] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.123398]  [<ffffffff81081d67>] ? worker_thread+0x187/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123402]  [<ffffffff8150da01>] ? __schedule+0x2b1/0x710
+Dec 23 21:03:17 orkisz kernel: [ 7319.123406]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123411]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123417]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.123422]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123428]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:17 orkisz kernel: [ 7319.123431] htop            D ffff8800a8cbf848     0  5788   5636 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123435]  ffff8800a8cbf3f0 0000000000000082 0000000000012f00 ffff880036a4ffd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123439]  0000000000012f00 ffff8800a8cbf3f0 ffff88014f2137b0 ffff88014f5c3d48
+Dec 23 21:03:17 orkisz kernel: [ 7319.123444]  0000000000000082 ffffffff8113ca80 ffff880036a4fc40 ffff8800a8bbf898
+Dec 23 21:03:17 orkisz kernel: [ 7319.123448] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.123453]  [<ffffffff8113ca80>] ? sleep_on_page+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.123457]  [<ffffffff8150e159>] ? io_schedule+0x99/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.123462]  [<ffffffff8113ca8a>] ? sleep_on_page_killable+0xa/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.123466]  [<ffffffff8150e4dc>] ? __wait_on_bit+0x5c/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123471]  [<ffffffff8113efff>] ? wait_on_page_bit_killable+0x7f/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123476]  [<ffffffff810a7a70>] ? autoremove_wake_function+0x30/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.123481]  [<ffffffff8113f0ae>] ? __lock_page_or_retry+0x9e/0xb0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123486]  [<ffffffff8113f2cb>] ? filemap_fault+0x20b/0x420
+Dec 23 21:03:17 orkisz kernel: [ 7319.123490]  [<ffffffff8116510a>] ? __do_fault+0x3a/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123495]  [<ffffffff81167cce>] ? do_read_fault.isra.54+0x4e/0x300
+Dec 23 21:03:17 orkisz kernel: [ 7319.123500]  [<ffffffff811696df>] ? handle_mm_fault+0x81f/0x11c0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123505]  [<ffffffff810572b7>] ? __do_page_fault+0x177/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123510]  [<ffffffff8150fe4e>] ? mutex_lock+0xe/0x2a
+Dec 23 21:03:17 orkisz kernel: [ 7319.123516]  [<ffffffff811c9933>] ? seq_read+0x1b3/0x360
+Dec 23 21:03:17 orkisz kernel: [ 7319.123522]  [<ffffffff811a80dd>] ? vfs_read+0xed/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.123528]  [<ffffffff815136e8>] ? page_fault+0x28/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.123531] make            S ffff8800918c3888     0  5799   5601 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123535]  ffff8800918c3430 0000000000000086 0000000000012f00 ffff8800a867bfd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123540]  0000000000012f00 ffff8800918c3430 ffff8800a867bf08 ffff8800918c37b0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123544]  ffff8800918c3430 ffff8800918c3430 ffff8800918c3430 ffff8800918c3420
+Dec 23 21:03:17 orkisz kernel: [ 7319.123549] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.123554]  [<ffffffff81069549>] ? do_wait+0x1d9/0x230
+Dec 23 21:03:17 orkisz kernel: [ 7319.123560]  [<ffffffff8106a5a7>] ? SyS_wait4+0x67/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123566]  [<ffffffff810683a0>] ? task_stopped_code+0x60/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.123571]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.123574] sh              S ffff88014007fa08     0  5800   5799 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123578]  ffff88014007f5b0 0000000000000082 0000000000012f00 ffff8800a73bbfd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123582]  0000000000012f00 ffff88014007f5b0 ffff8800a73bbf08 ffff88014007f930
+Dec 23 21:03:17 orkisz kernel: [ 7319.123587]  ffff88014007f5b0 ffff88014007f5b0 ffff88014007f5b0 ffff88014007f5a0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123592] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.123597]  [<ffffffff81069549>] ? do_wait+0x1d9/0x230
+Dec 23 21:03:17 orkisz kernel: [ 7319.123603]  [<ffffffff8106a5a7>] ? SyS_wait4+0x67/0xe0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123608]  [<ffffffff810683a0>] ? task_stopped_code+0x60/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.123613]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.123616] sh              S ffff8800918c25e8     0  5801   5800 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123620]  ffff8800918c2190 0000000000000086 0000000000012f00 ffff8800760fffd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123625]  0000000000012f00 ffff8800918c2190 ffff88007cace340 ffff88007cace368
+Dec 23 21:03:17 orkisz kernel: [ 7319.123629]  0000000000000012 ffff8800918c2190 0000000000000000 ffff88007cace340
+Dec 23 21:03:17 orkisz kernel: [ 7319.123634] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.123640]  [<ffffffff811afbcc>] ? pipe_wait+0x5c/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123644]  [<ffffffff810a7a40>] ? prepare_to_wait_event+0xf0/0xf0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123650]  [<ffffffff811afce0>] ? pipe_write+0x90/0x460
+Dec 23 21:03:17 orkisz kernel: [ 7319.123656]  [<ffffffff811a7ad4>] ? new_sync_write+0x74/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123662]  [<ffffffff811a8212>] ? vfs_write+0xb2/0x1f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123666]  [<ffffffff811a8d52>] ? SyS_write+0x42/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123671]  [<ffffffff815116cd>] ? system_call_fast_compare_end+0x10/0x15
+Dec 23 21:03:17 orkisz kernel: [ 7319.123674] crash           D ffff880140106568     0  5802   5800 0x00000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123678]  ffff880140106110 0000000000000082 0000000000012f00 ffff88007cba7fd8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123682]  0000000000012f00 ffff880140106110 ffff88014f2137b0 ffff88014f5b8c48
+Dec 23 21:03:17 orkisz kernel: [ 7319.123687]  0000000000000082 ffffffff8113ca80 ffff88007cba7c40 ffff880149fd9898
+Dec 23 21:03:17 orkisz kernel: [ 7319.123692] Call Trace:
+Dec 23 21:03:17 orkisz kernel: [ 7319.123696]  [<ffffffff8113ca80>] ? sleep_on_page+0x10/0x10
+Dec 23 21:03:17 orkisz kernel: [ 7319.123700]  [<ffffffff8150e159>] ? io_schedule+0x99/0x120
+Dec 23 21:03:17 orkisz kernel: [ 7319.123705]  [<ffffffff8113ca8a>] ? sleep_on_page_killable+0xa/0x40
+Dec 23 21:03:17 orkisz kernel: [ 7319.123709]  [<ffffffff8150e4dc>] ? __wait_on_bit+0x5c/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123714]  [<ffffffff8113efff>] ? wait_on_page_bit_killable+0x7f/0x90
+Dec 23 21:03:17 orkisz kernel: [ 7319.123719]  [<ffffffff810a7a70>] ? autoremove_wake_function+0x30/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.123724]  [<ffffffff8113f0ae>] ? __lock_page_or_retry+0x9e/0xb0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123729]  [<ffffffff8113f2cb>] ? filemap_fault+0x20b/0x420
+Dec 23 21:03:17 orkisz kernel: [ 7319.123733]  [<ffffffff8116510a>] ? __do_fault+0x3a/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123738]  [<ffffffff81167cce>] ? do_read_fault.isra.54+0x4e/0x300
+Dec 23 21:03:17 orkisz kernel: [ 7319.123744]  [<ffffffff8106b3a2>] ? current_fs_time+0x12/0x60
+Dec 23 21:03:17 orkisz kernel: [ 7319.123749]  [<ffffffff811696df>] ? handle_mm_fault+0x81f/0x11c0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123754]  [<ffffffff810572b7>] ? __do_page_fault+0x177/0x4f0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123760]  [<ffffffff811a7a31>] ? new_sync_read+0x71/0xa0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123766]  [<ffffffff811a80dd>] ? vfs_read+0xed/0x170
+Dec 23 21:03:17 orkisz kernel: [ 7319.123772]  [<ffffffff815136e8>] ? page_fault+0x28/0x30
+Dec 23 21:03:17 orkisz kernel: [ 7319.123777] Sched Debug Version: v0.11, 3.16.0-4-amd64 #1
+Dec 23 21:03:17 orkisz kernel: [ 7319.123781] ktime                                   : 7321427.935799
+Dec 23 21:03:17 orkisz kernel: [ 7319.123784] sched_clk                               : 7319123.775839
+Dec 23 21:03:17 orkisz kernel: [ 7319.123786] cpu_clk                                 : 7319123.775867
+Dec 23 21:03:17 orkisz kernel: [ 7319.123789] jiffies                                 : 4296722653
+Dec 23 21:03:17 orkisz kernel: [ 7319.123792] sched_clock_stable()                    : 1
+Dec 23 21:03:17 orkisz kernel: [ 7319.123794] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.123795] sysctl_sched
+Dec 23 21:03:17 orkisz kernel: [ 7319.123798]   .sysctl_sched_latency                    : 12.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123801]   .sysctl_sched_min_granularity            : 1.500000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123804]   .sysctl_sched_wakeup_granularity         : 2.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123806]   .sysctl_sched_child_runs_first           : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123809]   .sysctl_sched_features                   : 77435
+Dec 23 21:03:17 orkisz kernel: [ 7319.123812]   .sysctl_sched_tunable_scaling            : 1 (logaritmic)
+Dec 23 21:03:17 orkisz kernel: [ 7319.123814] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.123817] cpu#0, 1795.928 MHz
+Dec 23 21:03:17 orkisz kernel: [ 7319.123819]   .nr_running                    : 2
+Dec 23 21:03:17 orkisz kernel: [ 7319.123822]   .load                          : 2048
+Dec 23 21:03:17 orkisz kernel: [ 7319.123824]   .nr_switches                   : 6011421
+Dec 23 21:03:17 orkisz kernel: [ 7319.123827]   .nr_load_updates               : 910393
+Dec 23 21:03:17 orkisz kernel: [ 7319.123829]   .nr_uninterruptible            : 280
+Dec 23 21:03:17 orkisz kernel: [ 7319.123832]   .next_balance                  : 4296.722665
+Dec 23 21:03:17 orkisz kernel: [ 7319.123834]   .curr->pid                     : 29
+Dec 23 21:03:17 orkisz kernel: [ 7319.123837]   .clock                         : 7319116.622879
+Dec 23 21:03:17 orkisz kernel: [ 7319.123839]   .cpu_load[0]                   : 829
+Dec 23 21:03:17 orkisz kernel: [ 7319.123841]   .cpu_load[1]                   : 564
+Dec 23 21:03:17 orkisz kernel: [ 7319.123844]   .cpu_load[2]                   : 545
+Dec 23 21:03:17 orkisz kernel: [ 7319.123846]   .cpu_load[3]                   : 429
+Dec 23 21:03:17 orkisz kernel: [ 7319.123848]   .cpu_load[4]                   : 364
+Dec 23 21:03:17 orkisz kernel: [ 7319.123853] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.123853] cfs_rq[0]:/user.slice
+Dec 23 21:03:17 orkisz kernel: [ 7319.123856]   .exec_clock                    : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123869]   .MIN_vruntime                  : 0.000001
+Dec 23 21:03:17 orkisz kernel: [ 7319.123871]   .min_vruntime                  : 906204.738970
+Dec 23 21:03:17 orkisz kernel: [ 7319.123874]   .max_vruntime                  : 0.000001
+Dec 23 21:03:17 orkisz kernel: [ 7319.123876]   .spread                        : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123879]   .spread0                       : -108660.874331
+Dec 23 21:03:17 orkisz kernel: [ 7319.123881]   .nr_spread_over                : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123883]   .nr_running                    : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123885]   .load                          : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123887]   .runnable_load_avg             : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123889]   .blocked_load_avg              : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123891]   .tg_load_contrib               : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123893]   .tg_runnable_contrib           : 6
+Dec 23 21:03:17 orkisz kernel: [ 7319.123895]   .tg_load_avg                   : 7
+Dec 23 21:03:17 orkisz kernel: [ 7319.123897]   .tg->runnable_avg              : 15
+Dec 23 21:03:17 orkisz kernel: [ 7319.123900]   .se->exec_start                : 7319107.042520
+Dec 23 21:03:17 orkisz kernel: [ 7319.123902]   .se->vruntime                  : 1014856.218614
+Dec 23 21:03:17 orkisz kernel: [ 7319.123905]   .se->sum_exec_runtime          : 762567.719579
+Dec 23 21:03:17 orkisz kernel: [ 7319.123907]   .se->load.weight               : 2
+Dec 23 21:03:17 orkisz kernel: [ 7319.123909]   .se->avg.runnable_avg_sum      : 307
+Dec 23 21:03:17 orkisz kernel: [ 7319.123911]   .se->avg.runnable_avg_period   : 46600
+Dec 23 21:03:17 orkisz kernel: [ 7319.123913]   .se->avg.load_avg_contrib      : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123915]   .se->avg.decay_count           : 6980045
+Dec 23 21:03:17 orkisz kernel: [ 7319.123918] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.123918] cfs_rq[0]:/
+Dec 23 21:03:17 orkisz kernel: [ 7319.123921]   .exec_clock                    : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123924]   .MIN_vruntime                  : 1014862.035956
+Dec 23 21:03:17 orkisz kernel: [ 7319.123926]   .min_vruntime                  : 1014865.613301
+Dec 23 21:03:17 orkisz kernel: [ 7319.123928]   .max_vruntime                  : 1014862.035956
+Dec 23 21:03:17 orkisz kernel: [ 7319.123930]   .spread                        : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123933]   .spread0                       : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123935]   .nr_spread_over                : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123937]   .nr_running                    : 2
+Dec 23 21:03:17 orkisz kernel: [ 7319.123939]   .load                          : 2048
+Dec 23 21:03:17 orkisz kernel: [ 7319.123941]   .runnable_load_avg             : 829
+Dec 23 21:03:17 orkisz kernel: [ 7319.123943]   .blocked_load_avg              : 29
+Dec 23 21:03:17 orkisz kernel: [ 7319.123945]   .tg_load_contrib               : 858
+Dec 23 21:03:17 orkisz kernel: [ 7319.123947]   .tg_runnable_contrib           : 721
+Dec 23 21:03:17 orkisz kernel: [ 7319.123949]   .tg_load_avg                   : 874
+Dec 23 21:03:17 orkisz kernel: [ 7319.123951]   .tg->runnable_avg              : 747
+Dec 23 21:03:17 orkisz kernel: [ 7319.123953]   .avg->runnable_avg_sum         : 33893
+Dec 23 21:03:17 orkisz kernel: [ 7319.123955]   .avg->runnable_avg_period      : 47773
+Dec 23 21:03:17 orkisz kernel: [ 7319.123959] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.123959] cfs_rq[0]:/user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.123962]   .exec_clock                    : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123964]   .MIN_vruntime                  : 0.000001
+Dec 23 21:03:17 orkisz kernel: [ 7319.123966]   .min_vruntime                  : 586344.798365
+Dec 23 21:03:17 orkisz kernel: [ 7319.123969]   .max_vruntime                  : 0.000001
+Dec 23 21:03:17 orkisz kernel: [ 7319.123971]   .spread                        : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.123973]   .spread0                       : -428520.814936
+Dec 23 21:03:17 orkisz kernel: [ 7319.123975]   .nr_spread_over                : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123977]   .nr_running                    : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123979]   .load                          : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123981]   .runnable_load_avg             : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.123983]   .blocked_load_avg              : 8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123985]   .tg_load_contrib               : 8
+Dec 23 21:03:17 orkisz kernel: [ 7319.123987]   .tg_runnable_contrib           : 6
+Dec 23 21:03:17 orkisz kernel: [ 7319.123989]   .tg_load_avg                   : 11
+Dec 23 21:03:17 orkisz kernel: [ 7319.123991]   .tg->runnable_avg              : 15
+Dec 23 21:03:17 orkisz kernel: [ 7319.123993]   .se->exec_start                : 7319107.042520
+Dec 23 21:03:17 orkisz kernel: [ 7319.123996]   .se->vruntime                  : 884036.981205
+Dec 23 21:03:17 orkisz kernel: [ 7319.123998]   .se->sum_exec_runtime          : 706661.093343
+Dec 23 21:03:17 orkisz kernel: [ 7319.124000]   .se->load.weight               : 2
+Dec 23 21:03:17 orkisz kernel: [ 7319.124002]   .se->avg.runnable_avg_sum      : 307
+Dec 23 21:03:17 orkisz kernel: [ 7319.124004]   .se->avg.runnable_avg_period   : 46670
+Dec 23 21:03:17 orkisz kernel: [ 7319.124006]   .se->avg.load_avg_contrib      : 9
+Dec 23 21:03:17 orkisz kernel: [ 7319.124008]   .se->avg.decay_count           : 6980045
+Dec 23 21:03:17 orkisz kernel: [ 7319.124011] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.124011] cfs_rq[0]:/user.slice/user-1000.slice
+Dec 23 21:03:17 orkisz kernel: [ 7319.124014]   .exec_clock                    : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.124016]   .MIN_vruntime                  : 0.000001
+Dec 23 21:03:17 orkisz kernel: [ 7319.124018]   .min_vruntime                  : 884036.981205
+Dec 23 21:03:17 orkisz kernel: [ 7319.124021]   .max_vruntime                  : 0.000001
+Dec 23 21:03:17 orkisz kernel: [ 7319.124023]   .spread                        : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.124025]   .spread0                       : -130828.632096
+Dec 23 21:03:17 orkisz kernel: [ 7319.124027]   .nr_spread_over                : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.124029]   .nr_running                    : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.124031]   .load                          : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.124033]   .runnable_load_avg             : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.124035]   .blocked_load_avg              : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.124037]   .tg_load_contrib               : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.124039]   .tg_runnable_contrib           : 6
+Dec 23 21:03:17 orkisz kernel: [ 7319.124041]   .tg_load_avg                   : 6
+Dec 23 21:03:17 orkisz kernel: [ 7319.124043]   .tg->runnable_avg              : 15
+Dec 23 21:03:17 orkisz kernel: [ 7319.124045]   .se->exec_start                : 7319107.042520
+Dec 23 21:03:17 orkisz kernel: [ 7319.124047]   .se->vruntime                  : 906204.738970
+Dec 23 21:03:17 orkisz kernel: [ 7319.124050]   .se->sum_exec_runtime          : 761108.148236
+Dec 23 21:03:17 orkisz kernel: [ 7319.124052]   .se->load.weight               : 2
+Dec 23 21:03:17 orkisz kernel: [ 7319.124054]   .se->avg.runnable_avg_sum      : 307
+Dec 23 21:03:17 orkisz kernel: [ 7319.124055]   .se->avg.runnable_avg_period   : 46677
+Dec 23 21:03:17 orkisz kernel: [ 7319.124057]   .se->avg.load_avg_contrib      : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.124059]   .se->avg.decay_count           : 6980045
+Dec 23 21:03:17 orkisz kernel: [ 7319.124062] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.124062] rt_rq[0]:
+Dec 23 21:03:17 orkisz kernel: [ 7319.124064]   .rt_nr_running                 : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.124067]   .rt_throttled                  : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.124069]   .rt_time                       : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.124071]   .rt_runtime                    : 1000.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.124074] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.124074] runnable tasks:
+Dec 23 21:03:17 orkisz kernel: [ 7319.124074]             task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+Dec 23 21:03:17 orkisz kernel: [ 7319.124074] ----------------------------------------------------------------------------------------------------------
+Dec 23 21:03:17 orkisz kernel: [ 7319.124079]      ksoftirqd/0     3   1014234.034447     19148   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124088]     kworker/0:0H     5       627.133854         6   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124096]        rcu_sched     7   1014116.234399    146549   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124103]           rcu_bh     8        54.272183         2   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124111]      migration/0     9         0.000000      1447     0               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124118]       watchdog/0    10        -5.876123      1827     0               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124127]            netns    18        91.532810         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124135]        writeback    20       101.615045         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124142]       khugepaged    22       107.760660         2   139               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124150]          kblockd    26       113.848642         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124158] R        kswapd0    29   1014865.613301     18861   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124166]          deferwq    39       529.523878         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124174]            khubd    78    348469.635530       258   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124183]        scsi_eh_2    95       622.607560        19   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124191]     kworker/0:1H   103   1014845.274816     16395   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124200]  ext4-rsv-conver   162       827.730279         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124208]         cfg80211   477      2252.684698         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124215]        kpsmoused   493      2400.514602         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124222]        hd-audio0   496      2495.501620         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124229]          iwlwifi   505      2517.793702         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124237]    kworker/u17:0   616     10688.153431        47   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124244]             hci0   618      2938.103507         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124254]         kdmflush  1235      5031.468617         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124262]           bioset  1236      5031.677037         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124269]       kcryptd_io  1237      5031.885008         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124276]          kcryptd  1238      5032.092830         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124283]           bioset  1239      5032.301092         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124290]  ext4-rsv-conver  1483      5810.466076         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124297]      jbd2/dm-1-8  1519    953389.647838      3065   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124305]  ext4-rsv-conver  1520      5947.830185         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124312]        cgmanager  2090    789055.691625        89   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124319]    acpi_fakekeyd  2106      7952.809358         1   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124326]             iprt  2121      8015.374935         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124333]      in:imuxsock  2145    983193.707432       439   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124341]              atd  2247    983083.095594         5   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124349]     cups-browsed  2284    953358.997305       283   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124355]            acpid  2296   1014836.875957      3835   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124363]            gdbus  2524    565760.593600       247   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124371]            gmain  2535    348568.610751         4   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124378]  console-kit-dae  2457    953359.039587      1121   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124385]  console-kit-dae  2462    950921.859160        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124392]  console-kit-dae  2463    950921.860097        29   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124399]  console-kit-dae  2464    950921.858674        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124408]  console-kit-dae  2468    950921.858674        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124415]  console-kit-dae  2470    950921.858800        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124422]  console-kit-dae  2471    950921.865582        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124429]  console-kit-dae  2473    950921.861129        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124437]  console-kit-dae  2475    950921.861039        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124444]  console-kit-dae  2477    950921.859275        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124451]  console-kit-dae  2479    950921.859501        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124458]  console-kit-dae  2481    950921.859080        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124465]  console-kit-dae  2483    950921.858979        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124473]  console-kit-dae  2485    950921.859461        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124480]  console-kit-dae  2487    950921.860468        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124487]  console-kit-dae  2489    950921.859876        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124494]  console-kit-dae  2491    950921.861204        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124501]  console-kit-dae  2493    950921.861099        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124508]  console-kit-dae  2495    950921.859671        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124516]  console-kit-dae  2497    950921.858995        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124523]  console-kit-dae  2499    950921.860067        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124530]  console-kit-dae  2501    950921.860082        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124537]  console-kit-dae  2503    950921.861048        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124545]  console-kit-dae  2505    950921.859847        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124552]  console-kit-dae  2507    950921.859305        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124559]  console-kit-dae  2509    950921.859421        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124566]  console-kit-dae  2511    950921.860126        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124573]  console-kit-dae  2513    950921.859361        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124581]  console-kit-dae  2515    950921.860077        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124587]  console-kit-dae  2517    950921.859320        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124594]  console-kit-dae  2519    950921.861289        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124602]            gdbus  2525     13148.346385        16   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124609]  console-kit-dae  5647    950924.720568         2   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124616]          polkitd  2527    953358.967163       362   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124623]            gdbus  2533    953359.080563       323   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124630]            gmain  2534      9938.772264         3   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124637]     avahi-daemon  2548    982662.708948      3421   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124644]     avahi-daemon  2549      9562.762789         4   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124651]       bluetoothd  2657     12689.379329        65   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124658]          lightdm  2687    950921.900351       149   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124665]            gdbus  2747    950922.174294       555   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124672]            gmain  2797     12860.416254         7   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124679]   systemd-logind  2750    953358.986635      1030   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124688]   NetworkManager  2824   1014856.732879      4553   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124695]            gmain  2846     10701.701954         2   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124702]            gdbus  2847     14179.397233       119   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124709]           smartd  2904    983202.986306        53   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124716]   wpa_supplicant  2909   1012322.554364      1548   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124723]     ModemManager  2912    348455.506114       104   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124730]            gmain  2949     11321.889363         1   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124737]            gdbus  2951     14149.419060        26   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124745]         dhclient  2989     11720.721694        36   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124752]            login  2995        -5.675477        32   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-28.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124762]            gdbus  3073        70.831767        16   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-110.slice/session-c1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124770]            gmain  3075        76.767355         1   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-110.slice/session-c1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124777]      dbus-daemon  3074      1352.510683      2443   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-110.slice/session-c1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124785]  at-spi2-registr  3077      1362.258681     21947   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-110.slice/session-c1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124792]            gdbus  3078        97.820112        17   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-110.slice/session-c1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124799]          lightdm  3083        14.920586        98   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124807]            gdbus  3084    788957.705274       103   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.124814]            gmain  3094        18.556289         1   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124821]            timer  3263       920.685188         1   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124829]     dconf worker  3264       928.861703         9   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124837]        lxsession  3095    530644.872180      4233   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124844]            gdbus  3128       400.409599        14   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124852]      dbus-daemon  3124    530584.231016      1686   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124859]            gvfsd  3130    315090.449325       108   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124867]       gvfsd-fuse  3134       226.847409        11   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124874]       gvfsd-fuse  3137      1378.966738        20   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124882]       gvfsd-fuse  3138      1378.948906         3   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124889]            gdbus  3139      1377.731269        30   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124897]            gdbus  3165    203528.643011       118   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124904]            gmain  3167      6965.466554         6   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124912]            gmain  3166    530611.200563        93   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124919]        ssh-agent  3160       352.882385         1   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124927]            gdbus  3287      1354.742362        13   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124935]  mail-notificati  3241    530247.134443        48   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124942]  mail-notificati  3242    371216.842819       174   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124949]  mail-notificati  3243    371213.450143        60   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124957]  at-spi-bus-laun  3175     17467.596402        31   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124964]     dconf worker  3176       481.174569        11   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124971]            gdbus  3178     17467.760920        10   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124979]  at-spi2-registr  3182    558770.699371     21223   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124987]            gmain  3200       590.637563         1   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.124995]            gmain  3250       870.318054         1   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125002]          udisksd  3191    819119.635811       129   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125010]            gdbus  3194    819119.948965        89   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125017]   probing-thread  3195    789595.111643        12   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125024]            gdbus  3207    530583.606928        34   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125031]            gdbus  3213       804.004164        44   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125039]     dconf worker  3232       714.239177         6   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125046]            gdbus  3210    530583.071967        39   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125053]       goa-daemon  3212    315662.932395       171   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125062]             pool  3252       908.677139        19   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125069]            gdbus  3253    315662.980353        43   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125077]  alsa-sink-ALC32  3244    436518.983974     26685   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125084]     rtkit-daemon  3228         0.000000       973     0               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125092]  gnome-keyring-d  3249       922.927192        12   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125099]            gdbus  3277      1035.297024        20   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125106]            gmain  3278      1039.180465         1   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125114]  start-pulseaudi  3257       904.867904         2   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125121]            xprop  3258    530644.935348      3007   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125129]  gvfs-afc-volume  3269    530583.383419        33   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125137]          xfconfd  3276    378991.309740        27   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125144]            gdbus  3288      1360.922789        12   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125152]            gdbus  3290      7910.930759        75   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125159]            gmain  3291    316879.530040       186   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125167]             bash  3301      1740.656409        70   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125174]             bash  3317      1861.347331        35   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125181]            login  3801         0.021615        21   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-6.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125190]            gdbus  4010    316492.606379        31   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125197]  scp-dbus-servic  4533    156125.742299         3   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125204]            gdbus  4538    444563.357104        28   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125212]  scp-dbus-servic  4541    316737.754709       270   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125219]      kworker/0:0  5092   1014852.242081     22804   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125226]  x-terminal-emul  5235    558785.169384      2041   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125235]            gmain  5292    593826.237010         1   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125242]      kworker/0:1  5360    949619.399306      3842   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125249]      kworker/0:2  5525   1014862.035956     16371   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125256]    kworker/u16:3  5526   1014829.776994      7982   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125263]             bash  5636    530665.150097       178   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125270]    kworker/u16:2  5643    949670.250150        14   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125277]             htop  5788    586344.686307      1210   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125284]             make  5799    558869.091475         7   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125292]            crash  5802    586344.798365       761   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125299] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.125302] cpu#1, 1795.928 MHz
+Dec 23 21:03:17 orkisz kernel: [ 7319.125304]   .nr_running                    : 3
+Dec 23 21:03:17 orkisz kernel: [ 7319.125306]   .load                          : 3072
+Dec 23 21:03:17 orkisz kernel: [ 7319.125308]   .nr_switches                   : 6489363
+Dec 23 21:03:17 orkisz kernel: [ 7319.125311]   .nr_load_updates               : 959723
+Dec 23 21:03:17 orkisz kernel: [ 7319.125313]   .nr_uninterruptible            : -275
+Dec 23 21:03:17 orkisz kernel: [ 7319.125315]   .next_balance                  : 4296.722639
+Dec 23 21:03:17 orkisz kernel: [ 7319.125317]   .curr->pid                     : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125320]   .clock                         : 7319093.595385
+Dec 23 21:03:17 orkisz kernel: [ 7319.125322]   .cpu_load[0]                   : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125324]   .cpu_load[1]                   : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125326]   .cpu_load[2]                   : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125327]   .cpu_load[3]                   : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125329]   .cpu_load[4]                   : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125332] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.125332] cfs_rq[1]:/user.slice
+Dec 23 21:03:17 orkisz kernel: [ 7319.125335]   .exec_clock                    : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.125337]   .MIN_vruntime                  : 893794.367872
+Dec 23 21:03:17 orkisz kernel: [ 7319.125340]   .min_vruntime                  : 893794.367872
+Dec 23 21:03:17 orkisz kernel: [ 7319.125342]   .max_vruntime                  : 893794.367872
+Dec 23 21:03:17 orkisz kernel: [ 7319.125344]   .spread                        : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.125346]   .spread0                       : -121071.245429
+Dec 23 21:03:17 orkisz kernel: [ 7319.125348]   .nr_spread_over                : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125350]   .nr_running                    : 1
+Dec 23 21:03:17 orkisz kernel: [ 7319.125352]   .load                          : 1024
+Dec 23 21:03:17 orkisz kernel: [ 7319.125354]   .runnable_load_avg             : 7
+Dec 23 21:03:17 orkisz kernel: [ 7319.125356]   .blocked_load_avg              : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125359]   .tg_load_contrib               : 7
+Dec 23 21:03:17 orkisz kernel: [ 7319.125361]   .tg_runnable_contrib           : 9
+Dec 23 21:03:17 orkisz kernel: [ 7319.125362]   .tg_load_avg                   : 7
+Dec 23 21:03:17 orkisz kernel: [ 7319.125365]   .tg->runnable_avg              : 15
+Dec 23 21:03:17 orkisz kernel: [ 7319.125367]   .se->exec_start                : 7319082.411722
+Dec 23 21:03:17 orkisz kernel: [ 7319.125369]   .se->vruntime                  : 1000937.248120
+Dec 23 21:03:17 orkisz kernel: [ 7319.125372]   .se->sum_exec_runtime          : 750800.100443
+Dec 23 21:03:17 orkisz kernel: [ 7319.125374]   .se->load.weight               : 1024
+Dec 23 21:03:17 orkisz kernel: [ 7319.125376]   .se->avg.runnable_avg_sum      : 453
+Dec 23 21:03:17 orkisz kernel: [ 7319.125378]   .se->avg.runnable_avg_period   : 47778
+Dec 23 21:03:17 orkisz kernel: [ 7319.125380]   .se->avg.load_avg_contrib      : 7
+Dec 23 21:03:17 orkisz kernel: [ 7319.125382]   .se->avg.decay_count           : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125384] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.125384] cfs_rq[1]:/
+Dec 23 21:03:17 orkisz kernel: [ 7319.125387]   .exec_clock                    : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.125389]   .MIN_vruntime                  : 1000931.248120
+Dec 23 21:03:17 orkisz kernel: [ 7319.125392]   .min_vruntime                  : 1000937.248120
+Dec 23 21:03:17 orkisz kernel: [ 7319.125394]   .max_vruntime                  : 1000937.248120
+Dec 23 21:03:17 orkisz kernel: [ 7319.125396]   .spread                        : 6.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.125398]   .spread0                       : -13928.365181
+Dec 23 21:03:17 orkisz kernel: [ 7319.125400]   .nr_spread_over                : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125402]   .nr_running                    : 3
+Dec 23 21:03:17 orkisz kernel: [ 7319.125404]   .load                          : 3072
+Dec 23 21:03:17 orkisz kernel: [ 7319.125406]   .runnable_load_avg             : 11
+Dec 23 21:03:17 orkisz kernel: [ 7319.125408]   .blocked_load_avg              : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125410]   .tg_load_contrib               : 16
+Dec 23 21:03:17 orkisz kernel: [ 7319.125412]   .tg_runnable_contrib           : 26
+Dec 23 21:03:17 orkisz kernel: [ 7319.125414]   .tg_load_avg                   : 874
+Dec 23 21:03:17 orkisz kernel: [ 7319.125416]   .tg->runnable_avg              : 747
+Dec 23 21:03:17 orkisz kernel: [ 7319.125418]   .avg->runnable_avg_sum         : 1183
+Dec 23 21:03:17 orkisz kernel: [ 7319.125420]   .avg->runnable_avg_period      : 46212
+Dec 23 21:03:17 orkisz kernel: [ 7319.125423] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.125423] cfs_rq[1]:/user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.125426]   .exec_clock                    : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.125428]   .MIN_vruntime                  : 671054.298726
+Dec 23 21:03:17 orkisz kernel: [ 7319.125431]   .min_vruntime                  : 671060.085894
+Dec 23 21:03:17 orkisz kernel: [ 7319.125433]   .max_vruntime                  : 671054.298726
+Dec 23 21:03:17 orkisz kernel: [ 7319.125435]   .spread                        : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.125437]   .spread0                       : -343805.527407
+Dec 23 21:03:17 orkisz kernel: [ 7319.125439]   .nr_spread_over                : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125441]   .nr_running                    : 1
+Dec 23 21:03:17 orkisz kernel: [ 7319.125443]   .load                          : 1024
+Dec 23 21:03:17 orkisz kernel: [ 7319.125445]   .runnable_load_avg             : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125447]   .blocked_load_avg              : 2
+Dec 23 21:03:17 orkisz kernel: [ 7319.125449]   .tg_load_contrib               : 3
+Dec 23 21:03:17 orkisz kernel: [ 7319.125451]   .tg_runnable_contrib           : 9
+Dec 23 21:03:17 orkisz kernel: [ 7319.125453]   .tg_load_avg                   : 11
+Dec 23 21:03:17 orkisz kernel: [ 7319.125455]   .tg->runnable_avg              : 15
+Dec 23 21:03:17 orkisz kernel: [ 7319.125457]   .se->exec_start                : 7319082.411722
+Dec 23 21:03:17 orkisz kernel: [ 7319.125460]   .se->vruntime                  : 874208.128661
+Dec 23 21:03:17 orkisz kernel: [ 7319.125462]   .se->sum_exec_runtime          : 745382.512905
+Dec 23 21:03:17 orkisz kernel: [ 7319.125464]   .se->load.weight               : 1023
+Dec 23 21:03:17 orkisz kernel: [ 7319.125466]   .se->avg.runnable_avg_sum      : 450
+Dec 23 21:03:17 orkisz kernel: [ 7319.125468]   .se->avg.runnable_avg_period   : 47516
+Dec 23 21:03:17 orkisz kernel: [ 7319.125470]   .se->avg.load_avg_contrib      : 6
+Dec 23 21:03:17 orkisz kernel: [ 7319.125472]   .se->avg.decay_count           : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125475] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.125475] cfs_rq[1]:/user.slice/user-1000.slice
+Dec 23 21:03:17 orkisz kernel: [ 7319.125478]   .exec_clock                    : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.125480]   .MIN_vruntime                  : 874208.128661
+Dec 23 21:03:17 orkisz kernel: [ 7319.125482]   .min_vruntime                  : 874208.128661
+Dec 23 21:03:17 orkisz kernel: [ 7319.125484]   .max_vruntime                  : 874208.128661
+Dec 23 21:03:17 orkisz kernel: [ 7319.125486]   .spread                        : 0.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.125489]   .spread0                       : -140657.484640
+Dec 23 21:03:17 orkisz kernel: [ 7319.125491]   .nr_spread_over                : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125493]   .nr_running                    : 1
+Dec 23 21:03:17 orkisz kernel: [ 7319.125495]   .load                          : 1023
+Dec 23 21:03:17 orkisz kernel: [ 7319.125496]   .runnable_load_avg             : 6
+Dec 23 21:03:17 orkisz kernel: [ 7319.125498]   .blocked_load_avg              : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125500]   .tg_load_contrib               : 6
+Dec 23 21:03:17 orkisz kernel: [ 7319.125502]   .tg_runnable_contrib           : 9
+Dec 23 21:03:17 orkisz kernel: [ 7319.125504]   .tg_load_avg                   : 6
+Dec 23 21:03:17 orkisz kernel: [ 7319.125506]   .tg->runnable_avg              : 15
+Dec 23 21:03:17 orkisz kernel: [ 7319.125508]   .se->exec_start                : 7319082.411722
+Dec 23 21:03:17 orkisz kernel: [ 7319.125511]   .se->vruntime                  : 893794.367872
+Dec 23 21:03:17 orkisz kernel: [ 7319.125513]   .se->sum_exec_runtime          : 749318.437778
+Dec 23 21:03:17 orkisz kernel: [ 7319.125515]   .se->load.weight               : 1024
+Dec 23 21:03:17 orkisz kernel: [ 7319.125517]   .se->avg.runnable_avg_sum      : 450
+Dec 23 21:03:17 orkisz kernel: [ 7319.125519]   .se->avg.runnable_avg_period   : 47516
+Dec 23 21:03:17 orkisz kernel: [ 7319.125521]   .se->avg.load_avg_contrib      : 7
+Dec 23 21:03:17 orkisz kernel: [ 7319.125523]   .se->avg.decay_count           : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125525] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.125525] rt_rq[1]:
+Dec 23 21:03:17 orkisz kernel: [ 7319.125527]   .rt_nr_running                 : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125529]   .rt_throttled                  : 0
+Dec 23 21:03:17 orkisz kernel: [ 7319.125532]   .rt_time                       : 0.260819
+Dec 23 21:03:17 orkisz kernel: [ 7319.125534]   .rt_runtime                    : 900.000000
+Dec 23 21:03:17 orkisz kernel: [ 7319.125536] 
+Dec 23 21:03:17 orkisz kernel: [ 7319.125536] runnable tasks:
+Dec 23 21:03:17 orkisz kernel: [ 7319.125536]             task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+Dec 23 21:03:17 orkisz kernel: [ 7319.125536] ----------------------------------------------------------------------------------------------------------
+Dec 23 21:03:17 orkisz kernel: [ 7319.125540]             init     1   1000896.952687      1944   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125548]         kthreadd     2    988497.762164       171   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125555]       watchdog/1    11        -2.973488      1834     0               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125562]      migration/1    12         0.000000      1467     0               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125569]      ksoftirqd/1    13   1000926.101248     18933   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125576]     kworker/1:0H    15       392.817707         7   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125583]          khelper    16         2.960516         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125590]        kdevtmpfs    17    365970.085319       196   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125597]       khungtaskd    19   1000917.585445        63   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125604]             ksmd    21        14.825873         2   125               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125612]           crypto    23        20.867447         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125619]      kintegrityd    24        24.872120         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125626]           bioset    25        28.876632         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125633]    fsnotify_mark    30    990325.552472        66   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125640]         kthrotld    36        91.082570         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125647]    ipv6_addrconf    37        95.102734         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125654]          ata_sff    79       283.872812         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125661]        scsi_eh_0    80       371.959608         3   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125668]       scsi_tmf_0    92       348.448438         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125675]        scsi_eh_1    93       366.457066         3   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125681]       scsi_tmf_1    94       356.450426         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125689]       scsi_tmf_2    96       364.452482         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125696]        scsi_eh_3    97       370.457724         3   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125703]       scsi_tmf_3    98       372.454692         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125710]     kworker/1:1H   104    999013.969215     13999   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125717]         kdmflush   135       535.706566         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125724]           bioset   136       539.707402         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125731]       kcryptd_io   137       543.708344         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125738]          kcryptd   138       547.709159         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125745]           bioset   139       551.710173         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125752]      jbd2/dm-0-8   161    997553.154130      1418   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125760]            udevd   343    991443.740827       924   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125767]    irq/42-mei_me   469         0.000000        15    49               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125775]   irq/43-iwlwifi   482         0.000000    657511    49               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125782]  kvm-irqfd-clean   519      2547.162904         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125790]             hci0   617      2824.190975         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125797]    kworker/u17:1   628     10451.090984        74   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125804]        kmemstick   823      3472.797877         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125811]    rtsx_usb_ms_4   837   1000925.350795      7276   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125818]         kdmflush  1176      4742.908408         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125825]           bioset  1177      4743.118872         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125832]       kcryptd_io  1178      4743.327830         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125840]          kcryptd  1179      4743.536467         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125847]           bioset  1180      4743.745097         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125855]      jbd2/sda8-8  1482      5767.825261         2   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125863]      jbd2/dm-2-8  1521    711421.039467       611   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125870]  ext4-rsv-conver  1522      5886.777105         2   100               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125878]         rsyslogd  2144    997265.826619        13   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125885]        in:imklog  2146    996392.072999       115   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125892]    rs:main Q:Reg  2147    997498.151086       562   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125899]             cron  2338    998394.148842       196   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125906]            cupsd  2356    745305.201180     13785   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125913]       uml_switch  2363   1000928.065973      3801   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125921]      dbus-daemon  2406   1000819.558216      6124   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125928]           colord  2410    689047.715114       338   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125936]       irqbalance  2427   1000931.248120       910   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125943]  console-kit-dae  2459    989039.222669        39   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125950]  console-kit-dae  2461    989025.191415        29   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125958]  console-kit-dae  2466    989025.190663        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125965]  console-kit-dae  2467    989025.193188        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125972]  console-kit-dae  2469    989025.209029        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125979]  console-kit-dae  2472    989025.191575        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125986]  console-kit-dae  2474    989025.190673        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.125993]  console-kit-dae  2476    989025.189881        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126000]  console-kit-dae  2478    989025.189581        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126008]  console-kit-dae  2480    989025.189330        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126015]  console-kit-dae  2482    989025.189586        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126022]  console-kit-dae  2484    989025.189671        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126029]  console-kit-dae  2486    989025.190127        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126036]  console-kit-dae  2488    989025.190457        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126043]  console-kit-dae  2490    989025.190458        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126050]  console-kit-dae  2492    989025.190593        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126057]  console-kit-dae  2494    989025.190317        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126065]  console-kit-dae  2496    989025.189666        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126072]  console-kit-dae  2498    989025.189020        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126079]  console-kit-dae  2500    989025.190107        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126086]  console-kit-dae  2502    989025.190984        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126093]  console-kit-dae  2504    989025.192015        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126100]  console-kit-dae  2506    989025.190298        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126107]  console-kit-dae  2508    989025.191349        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126114]  console-kit-dae  2510    989025.189095        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126121]  console-kit-dae  2512    989025.189385        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126128]  console-kit-dae  2514    989025.188875        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126135]  console-kit-dae  2516    989025.190788        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126142]  console-kit-dae  2518    989025.190954        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126149]  console-kit-dae  2520    989025.191364        28   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126156]            gmain  2522    989039.191215        32   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126163]  console-kit-dae  5649    989035.280347         1   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126172]             Xorg  2796   1000931.337543   1129255   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126179]  accounts-daemon  2802    927972.408738       202   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126186]            gmain  2804   1000919.294924      3162   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126193]            gdbus  2805    927966.302184       212   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126199]   NetworkManager  2825     10386.385646         1   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126207]          kauditd  2967     11300.757222         2   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126215]            getty  2997     11452.074455        16   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126221]            getty  2998     11450.948750        14   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126229]            getty  2999     11450.566572        16   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126236]            getty  3000     11450.758476        16   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126242]      dbus-launch  3049        29.758826         9   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-110.slice/session-c1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126250]      dbus-daemon  3068       928.517258        28   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-110.slice/session-c1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126257]  at-spi-bus-laun  3070        53.168823        40   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-110.slice/session-c1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126264]     dconf worker  3071        49.338769        12   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-110.slice/session-c1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126273]  gnome-keyring-d  3093    670041.336780       180   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126281]            gdbus  3265       990.053481         5   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126288]            gmain  3141       638.471023         7   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126295]        ssh-agent  3119    671040.214143       788   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126302]        gpg-agent  3120    671048.950852      2727   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126310]      dbus-launch  3123       162.209048         8   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126317]            gdbus  3131    485832.991063       133   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126325]    gvfs-fuse-sub  3140      1478.586286         4   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126332]          openbox  3146    670889.624364     43630   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126339]         lxpolkit  3149    669070.274525        82   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126347]            gdbus  3150       289.786935        18   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126354]          lxpanel  3151    671054.298726     66684   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126361]    menu-cache-io  3284      1486.979587         3   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126368]          pcmanfm  3152    670207.238683     54580   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126375]            gdbus  3164    227706.979413       166   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126383]           python  3162    670872.587113       838   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126390]  mail-notificati  3171    670454.340370      1540   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126397]            gdbus  3235    639244.647452        42   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126405]            gmain  3180       401.417861         1   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126412]      dbus-daemon  3179    670772.271226      1686   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126420]            gdbus  3183       408.353108        12   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126427]  gvfs-udisks2-vo  3186    670041.478634       160   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126434]            gdbus  3189    670040.908679       113   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126441]        applet.py  3188    670041.996893       418   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126449]            gmain  3192    365933.672493         8   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126456]          cleanup  3198    928414.582671        10   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126463]  gvfs-mtp-volume  3203    670041.260048        23   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126470]        nm-applet  3205    671054.534526      9452   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126477]  gvfs-goa-volume  3209    670041.369366        30   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126484]            gmain  3251    670207.240268      3813   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126492]         gconfd-2  3216    670917.740722       481   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126499]       pulseaudio  3221    670041.714275     27130   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126506]     rtkit-daemon  3223     14564.707576        28   121               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126513]     rtkit-daemon  3227   1000824.209655      1455   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126520]        pasystray  3230    670454.325927      4132   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126527]            gdbus  3234    639244.784175        63   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126534]  hamster-service  3255    669071.383157       161   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126542]  gvfs-gphoto2-vo  3262    670041.306749        28   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126549]            gdbus  3267    670041.750667        39   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126556]  gvfs-afc-volume  3270    638772.454818         9   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126563]            gdbus  3272    670041.447092        35   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126571]      menu-cached  3283      1594.392053        22   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126578]            gmain  3289      1479.784573         1   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126585]      gvfsd-trash  3286    489255.552155       201   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126592]  x-terminal-emul  3299    670840.937027      5138   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126599]  x-terminal-emul  3300      1959.816008        15   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126606]             mutt  3309    670840.940935      2629   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126614]             mutt  3323    670866.252758      2614   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126621]             bash  3824      1624.030483       158   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-6.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126628]   gvfsd-metadata  4009    488933.738191        74   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126636]  scp-dbus-servic  4528    670454.295888      4679   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126643]  x-terminal-emul  5236    499343.192409        12   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126650]             bash  5237    499735.596801       148   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126657]          upowerd  5291    998431.785388       376   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126664]            gdbus  5293    927839.938663        13   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126671]      kworker/1:1  5348   1000931.224232     14776   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126678]    kworker/u16:0  5400    988503.750924      8184   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126685]      kworker/1:0  5426    992259.600193     15777   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126692]             bash  5513      2391.764843        21   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-28.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126700]      kworker/1:2  5582    999012.820956     11263   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126707]  x-terminal-emul  5599    671055.518920      5152   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126714]  x-terminal-emul  5600    662048.349218        29   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126722]             bash  5601    670792.192537       370   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126729]    kworker/u16:1  5627    996673.660566      2052   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126736]    kworker/u16:4  5644   1000905.540731      1116   120               0               0               0.000000               0.000000               0.000000 0 /
+Dec 23 21:03:17 orkisz kernel: [ 7319.126743]               sh  5800    670807.273680         3   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126751]               sh  5801    670813.556928         2   120               0               0               0.000000               0.000000               0.000000 0 /user.slice/user-1000.slice/session-1.scope
+Dec 23 21:03:17 orkisz kernel: [ 7319.126758] 
+Dec 23 21:03:36 orkisz kernel: [ 7339.345821] SysRq : Manual OOM execution
+Dec 23 21:03:36 orkisz kernel: [ 7339.345841] Purging GPU memory, 0 bytes freed, 5685248 bytes still pinned.
+Dec 23 21:03:36 orkisz kernel: [ 7339.345948] kworker/1:1 invoked oom-killer: gfp_mask=0xd0, order=0, oom_score_adj=0
+Dec 23 21:03:36 orkisz kernel: [ 7339.345950] kworker/1:1 cpuset=/ mems_allowed=0
+Dec 23 21:03:36 orkisz kernel: [ 7339.345955] CPU: 1 PID: 5348 Comm: kworker/1:1 Tainted: G           O  3.16.0-4-amd64 #1 Debian 3.16.7-ckt11-1+deb8u6
+Dec 23 21:03:36 orkisz kernel: [ 7339.345957] Hardware name: LENOVO 20257/Ideapad S210, BIOS 80CN15WW 04/10/2013
+Dec 23 21:03:36 orkisz kernel: [ 7339.345963] Workqueue: events moom_callback
+Dec 23 21:03:36 orkisz kernel: [ 7339.345965]  0000000000000000 ffffffff8150b4e5 ffff8800a8f90290 ffffffff81509147
+Dec 23 21:03:36 orkisz kernel: [ 7339.345968]  000000000056c000 ffff880037267b30 ffff880037267c08 0001f9d6530a4ba0
+Dec 23 21:03:36 orkisz kernel: [ 7339.345971]  ffff8800a9ccd000 ffffffffa05a42ab ffff880037260000 0100000000000000
+Dec 23 21:03:36 orkisz kernel: [ 7339.345974] Call Trace:
+Dec 23 21:03:36 orkisz kernel: [ 7339.345980]  [<ffffffff8150b4e5>] ? dump_stack+0x41/0x51
+Dec 23 21:03:36 orkisz kernel: [ 7339.345983]  [<ffffffff81509147>] ? dump_header+0x76/0x1e8
+Dec 23 21:03:36 orkisz kernel: [ 7339.346007]  [<ffffffffa05a42ab>] ? i915_gem_shrinker_oom+0x15b/0x1c0 [i915]
+Dec 23 21:03:36 orkisz kernel: [ 7339.346012]  [<ffffffff811404fd>] ? oom_kill_process+0x21d/0x370
+Dec 23 21:03:36 orkisz kernel: [ 7339.346015]  [<ffffffff811400bd>] ? find_lock_task_mm+0x3d/0x90
+Dec 23 21:03:36 orkisz kernel: [ 7339.346018]  [<ffffffff81140c63>] ? out_of_memory+0x473/0x4b0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346022]  [<ffffffff81081662>] ? process_one_work+0x172/0x420
+Dec 23 21:03:36 orkisz kernel: [ 7339.346024]  [<ffffffff81081cf3>] ? worker_thread+0x113/0x4f0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346027]  [<ffffffff81081be0>] ? rescuer_thread+0x2d0/0x2d0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346031]  [<ffffffff81087f7d>] ? kthread+0xbd/0xe0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346034]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:36 orkisz kernel: [ 7339.346038]  [<ffffffff81511618>] ? ret_from_fork+0x58/0x90
+Dec 23 21:03:36 orkisz kernel: [ 7339.346041]  [<ffffffff81087ec0>] ? kthread_create_on_node+0x180/0x180
+Dec 23 21:03:36 orkisz kernel: [ 7339.346043] Mem-Info:
+Dec 23 21:03:36 orkisz kernel: [ 7339.346044] Node 0 DMA per-cpu:
+Dec 23 21:03:36 orkisz kernel: [ 7339.346047] CPU    0: hi:    0, btch:   1 usd:   0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346049] CPU    1: hi:    0, btch:   1 usd:   0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346050] Node 0 DMA32 per-cpu:
+Dec 23 21:03:36 orkisz kernel: [ 7339.346052] CPU    0: hi:  186, btch:  31 usd: 169
+Dec 23 21:03:36 orkisz kernel: [ 7339.346053] CPU    1: hi:  186, btch:  31 usd:  48
+Dec 23 21:03:36 orkisz kernel: [ 7339.346055] Node 0 Normal per-cpu:
+Dec 23 21:03:36 orkisz kernel: [ 7339.346056] CPU    0: hi:  186, btch:  31 usd: 167
+Dec 23 21:03:36 orkisz kernel: [ 7339.346058] CPU    1: hi:  186, btch:  31 usd:  24
+Dec 23 21:03:36 orkisz kernel: [ 7339.346062] active_anon:924545 inactive_anon:7701 isolated_anon:0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346062]  active_file:421 inactive_file:440 isolated_file:32
+Dec 23 21:03:36 orkisz kernel: [ 7339.346062]  unevictable:12 dirty:257 writeback:0 unstable:0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346062]  free:25058 slab_reclaimable:3932 slab_unreclaimable:7186
+Dec 23 21:03:36 orkisz kernel: [ 7339.346062]  mapped:1856 shmem:8153 pagetables:5829 bounce:0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346062]  free_cma:0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346066] Node 0 DMA free:15632kB min:268kB low:332kB high:400kB active_anon:0kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB isolated(anon):0kB isolated(file):0kB present:15900kB managed:15808kB mlocked:0kB dirty:0kB writeback:0kB mapped:0kB shmem:0kB slab_reclaimable:76kB slab_unreclaimable:32kB kernel_stack:0kB pagetables:0kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:0 all_unreclaimable? yes
+Dec 23 21:03:36 orkisz kernel: [ 7339.346071] lowmem_reserve[]: 0 2617 3827 3827
+Dec 23 21:03:36 orkisz kernel: [ 7339.346074] Node 0 DMA32 free:62508kB min:46012kB low:57512kB high:69016kB active_anon:2536196kB inactive_anon:22536kB active_file:740kB inactive_file:648kB unevictable:0kB isolated(anon):0kB isolated(file):128kB present:2754300kB managed:2679856kB mlocked:0kB dirty:584kB writeback:0kB mapped:3984kB shmem:23560kB slab_reclaimable:7980kB slab_unreclaimable:14636kB kernel_stack:2880kB pagetables:15804kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:2240 all_unreclaimable? yes
+Dec 23 21:03:36 orkisz kernel: [ 7339.346080] lowmem_reserve[]: 0 0 1210 1210
+Dec 23 21:03:36 orkisz kernel: [ 7339.346082] Node 0 Normal free:22092kB min:21296kB low:26620kB high:31944kB active_anon:1161984kB inactive_anon:8268kB active_file:944kB inactive_file:1112kB unevictable:48kB isolated(anon):0kB isolated(file):0kB present:1300480kB managed:1239436kB mlocked:48kB dirty:444kB writeback:0kB mapped:3440kB shmem:9052kB slab_reclaimable:7672kB slab_unreclaimable:14076kB kernel_stack:2576kB pagetables:7512kB unstable:0kB bounce:0kB free_cma:0kB writeback_tmp:0kB pages_scanned:3531 all_unreclaimable? yes
+Dec 23 21:03:36 orkisz kernel: [ 7339.346087] lowmem_reserve[]: 0 0 0 0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346090] Node 0 DMA: 2*4kB (UE) 1*8kB (U) 2*16kB (UE) 1*32kB (E) 1*64kB (U) 3*128kB (UE) 1*256kB (E) 1*512kB (E) 2*1024kB (UE) 2*2048kB (ER) 2*4096kB (M) = 15632kB
+Dec 23 21:03:36 orkisz kernel: [ 7339.346104] Node 0 DMA32: 943*4kB (UEM) 572*8kB (UEM) 443*16kB (UEM) 289*32kB (UEM) 186*64kB (UEM) 91*128kB (UE) 30*256kB (E) 1*512kB (M) 0*1024kB 3*2048kB (MR) 0*4096kB = 62572kB
+Dec 23 21:03:36 orkisz kernel: [ 7339.346117] Node 0 Normal: 246*4kB (E) 227*8kB (UEM) 194*16kB (UEM) 104*32kB (UEM) 54*64kB (UEM) 26*128kB (UEM) 8*256kB (UEM) 0*512kB 0*1024kB 0*2048kB 1*4096kB (R) = 22160kB
+Dec 23 21:03:36 orkisz kernel: [ 7339.346129] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+Dec 23 21:03:36 orkisz kernel: [ 7339.346131] 9117 total pagecache pages
+Dec 23 21:03:36 orkisz kernel: [ 7339.346132] 0 pages in swap cache
+Dec 23 21:03:36 orkisz kernel: [ 7339.346134] Swap cache stats: add 0, delete 0, find 0/0
+Dec 23 21:03:36 orkisz kernel: [ 7339.346135] Free swap  = 0kB
+Dec 23 21:03:36 orkisz kernel: [ 7339.346136] Total swap = 0kB
+Dec 23 21:03:36 orkisz kernel: [ 7339.346138] 1017670 pages RAM
+Dec 23 21:03:36 orkisz kernel: [ 7339.346139] 0 pages HighMem/MovableOnly
+Dec 23 21:03:36 orkisz kernel: [ 7339.346140] 15261 pages reserved
+Dec 23 21:03:36 orkisz kernel: [ 7339.346141] 0 pages hwpoisoned
+Dec 23 21:03:36 orkisz kernel: [ 7339.346142] [ pid ]   uid  tgid total_vm      rss nr_ptes swapents oom_score_adj name
+Dec 23 21:03:36 orkisz kernel: [ 7339.346149] [  343]     0   343    10376      277      21        0         -1000 udevd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346155] [ 2090]     0  2090     5889       64      14        0             0 cgmanager
+Dec 23 21:03:36 orkisz kernel: [ 7339.346157] [ 2106]     0  2106     5530       48      15        0             0 acpi_fakekeyd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346159] [ 2144]     0  2144    64666      200      29        0             0 rsyslogd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346162] [ 2247]     0  2247     4753       41      12        0             0 atd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346165] [ 2284]     0  2284    17957      200      38        0             0 cups-browsed
+Dec 23 21:03:36 orkisz kernel: [ 7339.346167] [ 2296]     0  2296     1095       93       7        0             0 acpid
+Dec 23 21:03:36 orkisz kernel: [ 7339.346169] [ 2338]     0  2338     7178       70      19        0             0 cron
+Dec 23 21:03:36 orkisz kernel: [ 7339.346172] [ 2356]     0  2356    21455      570      44        0             0 cupsd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346174] [ 2363]   118  2363     1055       21       8        0             0 uml_switch
+Dec 23 21:03:36 orkisz kernel: [ 7339.346176] [ 2406]   101  2406    10744      300      25        0             0 dbus-daemon
+Dec 23 21:03:36 orkisz kernel: [ 7339.346179] [ 2410]   108  2410    76328     1122      51        0             0 colord
+Dec 23 21:03:36 orkisz kernel: [ 7339.346181] [ 2427]     0  2427     4817       76      13        0             0 irqbalance
+Dec 23 21:03:36 orkisz kernel: [ 7339.346184] [ 2457]     0  2457   264305      295      48        0             0 console-kit-dae
+Dec 23 21:03:36 orkisz kernel: [ 7339.346186] [ 2527]     0  2527    70026      541      40        0             0 polkitd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346188] [ 2548]   103  2548     8054       91      21        0             0 avahi-daemon
+Dec 23 21:03:36 orkisz kernel: [ 7339.346191] [ 2549]   103  2549     8023       65      20        0             0 avahi-daemon
+Dec 23 21:03:36 orkisz kernel: [ 7339.346193] [ 2657]     0  2657     6454       88      17        0             0 bluetoothd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346195] [ 2687]     0  2687    88050      239      38        0             0 lightdm
+Dec 23 21:03:36 orkisz kernel: [ 7339.346198] [ 2750]     0  2750     7083       95      20        0             0 systemd-logind
+Dec 23 21:03:36 orkisz kernel: [ 7339.346200] [ 2796]     0  2796    59805     5189      92        0             0 Xorg
+Dec 23 21:03:36 orkisz kernel: [ 7339.346202] [ 2802]     0  2802    68624      249      35        0             0 accounts-daemon
+Dec 23 21:03:36 orkisz kernel: [ 7339.346205] [ 2824]     0  2824   107320      579      71        0             0 NetworkManager
+Dec 23 21:03:36 orkisz kernel: [ 7339.346207] [ 2904]     0  2904     6109      174      16        0             0 smartd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346209] [ 2909]     0  2909     7720      176      19        0             0 wpa_supplicant
+Dec 23 21:03:36 orkisz kernel: [ 7339.346211] [ 2912]     0  2912    84066      311      67        0             0 ModemManager
+Dec 23 21:03:36 orkisz kernel: [ 7339.346214] [ 2989]     0  2989     6347     1727      15        0             0 dhclient
+Dec 23 21:03:36 orkisz kernel: [ 7339.346216] [ 2995]     0  2995    20632      147      44        0             0 login
+Dec 23 21:03:36 orkisz kernel: [ 7339.346218] [ 2997]     0  2997     3907       39      12        0             0 getty
+Dec 23 21:03:36 orkisz kernel: [ 7339.346221] [ 2998]     0  2998     3907       40      13        0             0 getty
+Dec 23 21:03:36 orkisz kernel: [ 7339.346223] [ 2999]     0  2999     3907       39      13        0             0 getty
+Dec 23 21:03:36 orkisz kernel: [ 7339.346225] [ 3000]     0  3000     3907       40      13        0             0 getty
+Dec 23 21:03:36 orkisz kernel: [ 7339.346227] [ 3049]   110  3049     6091       64      16        0             0 dbus-launch
+Dec 23 21:03:36 orkisz kernel: [ 7339.346230] [ 3068]   110  3068    10529       93      24        0             0 dbus-daemon
+Dec 23 21:03:36 orkisz kernel: [ 7339.346232] [ 3070]   110  3070    84392      119      33        0             0 at-spi-bus-laun
+Dec 23 21:03:36 orkisz kernel: [ 7339.346234] [ 3074]   110  3074    10529       91      24        0             0 dbus-daemon
+Dec 23 21:03:36 orkisz kernel: [ 7339.346237] [ 3077]   110  3077    31301      145      29        0             0 at-spi2-registr
+Dec 23 21:03:36 orkisz kernel: [ 7339.346239] [ 3083]     0  3083    42253      239      50        0             0 lightdm
+Dec 23 21:03:36 orkisz kernel: [ 7339.346241] [ 3093]  1000  3093    70738      178      37        0             0 gnome-keyring-d
+Dec 23 21:03:36 orkisz kernel: [ 7339.346244] [ 3095]  1000  3095    90737      381      77        0             0 lxsession
+Dec 23 21:03:36 orkisz kernel: [ 7339.346246] [ 3119]  1000  3119     2672       85       8        0             0 ssh-agent
+Dec 23 21:03:36 orkisz kernel: [ 7339.346249] [ 3120]  1000  3120     5218       61      13        0             0 gpg-agent
+Dec 23 21:03:36 orkisz kernel: [ 7339.346251] [ 3123]  1000  3123     6091       65      17        0             0 dbus-launch
+Dec 23 21:03:36 orkisz kernel: [ 7339.346253] [ 3124]  1000  3124    10657      217      24        0             0 dbus-daemon
+Dec 23 21:03:36 orkisz kernel: [ 7339.346255] [ 3130]  1000  3130    52763      172      37        0             0 gvfsd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346257] [ 3134]  1000  3134    88787      183      42        0             0 gvfsd-fuse
+Dec 23 21:03:36 orkisz kernel: [ 7339.346259] [ 3146]  1000  3146    38203     1121      75        0             0 openbox
+Dec 23 21:03:36 orkisz kernel: [ 7339.346262] [ 3149]  1000  3149    51312      289      69        0             0 lxpolkit
+Dec 23 21:03:36 orkisz kernel: [ 7339.346264] [ 3151]  1000  3151   117165     1541     126        0             0 lxpanel
+Dec 23 21:03:36 orkisz kernel: [ 7339.346267] [ 3152]  1000  3152   196600     5670     127        0             0 pcmanfm
+Dec 23 21:03:36 orkisz kernel: [ 7339.346269] [ 3160]  1000  3160     2672       85       8        0             0 ssh-agent
+Dec 23 21:03:36 orkisz kernel: [ 7339.346271] [ 3162]  1000  3162    72069     3980     107        0             0 python
+Dec 23 21:03:36 orkisz kernel: [ 7339.346273] [ 3171]  1000  3171   165585     1389     155        0             0 mail-notificati
+Dec 23 21:03:36 orkisz kernel: [ 7339.346276] [ 3175]  1000  3175    84395      120      32        0             0 at-spi-bus-laun
+Dec 23 21:03:36 orkisz kernel: [ 7339.346278] [ 3179]  1000  3179    10529      102      26        0             0 dbus-daemon
+Dec 23 21:03:36 orkisz kernel: [ 7339.346280] [ 3182]  1000  3182    31301      145      30        0             0 at-spi2-registr
+Dec 23 21:03:36 orkisz kernel: [ 7339.346283] [ 3186]  1000  3186   113040      400      51        0             0 gvfs-udisks2-vo
+Dec 23 21:03:36 orkisz kernel: [ 7339.346285] [ 3188]  1000  3188    57596     2351      79        0             0 applet.py
+Dec 23 21:03:36 orkisz kernel: [ 7339.346288] [ 3191]     0  3191   108890      487      46        0             0 udisksd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346290] [ 3203]  1000  3203    51943      167      37        0             0 gvfs-mtp-volume
+Dec 23 21:03:36 orkisz kernel: [ 7339.346292] [ 3205]  1000  3205   129707     1228     122        0             0 nm-applet
+Dec 23 21:03:36 orkisz kernel: [ 7339.346294] [ 3209]  1000  3209    50946      169      36        0             0 gvfs-goa-volume
+Dec 23 21:03:36 orkisz kernel: [ 7339.346296] [ 3212]  1000  3212   161017     1124     146        0             0 goa-daemon
+Dec 23 21:03:36 orkisz kernel: [ 7339.346299] [ 3216]  1000  3216    13270      158      31        0             0 gconfd-2
+Dec 23 21:03:36 orkisz kernel: [ 7339.346301] [ 3221]  1000  3221    73242      601      82        0             0 pulseaudio
+Dec 23 21:03:36 orkisz kernel: [ 7339.346303] [ 3223]   112  3223    42193       60      19        0             0 rtkit-daemon
+Dec 23 21:03:36 orkisz kernel: [ 7339.346306] [ 3230]  1000  3230    91544     1116     114        0             0 pasystray
+Dec 23 21:03:36 orkisz kernel: [ 7339.346308] [ 3249]  1000  3249    12774      112      29        0             0 gnome-keyring-d
+Dec 23 21:03:36 orkisz kernel: [ 7339.346310] [ 3255]  1000  3255    86286     2876      99        0             0 hamster-service
+Dec 23 21:03:36 orkisz kernel: [ 7339.346313] [ 3257]  1000  3257     1082       26       6        0             0 start-pulseaudi
+Dec 23 21:03:36 orkisz kernel: [ 7339.346315] [ 3258]  1000  3258     5033      167      15        0             0 xprop
+Dec 23 21:03:36 orkisz kernel: [ 7339.346317] [ 3262]  1000  3262    54213      209      40        0             0 gvfs-gphoto2-vo
+Dec 23 21:03:36 orkisz kernel: [ 7339.346319] [ 3269]  1000  3269    75331      220      48        0             0 gvfs-afc-volume
+Dec 23 21:03:36 orkisz kernel: [ 7339.346322] [ 3276]  1000  3276     9338       88      22        0             0 xfconfd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346324] [ 3283]  1000  3283    51262      126      34        0             0 menu-cached
+Dec 23 21:03:36 orkisz kernel: [ 7339.346326] [ 3286]  1000  3286   109709      231      46        0             0 gvfsd-trash
+Dec 23 21:03:36 orkisz kernel: [ 7339.346329] [ 3299]  1000  3299    33850     2824      58        0             0 x-terminal-emul
+Dec 23 21:03:36 orkisz kernel: [ 7339.346331] [ 3300]  1000  3300    20865      143      42        0             0 x-terminal-emul
+Dec 23 21:03:36 orkisz kernel: [ 7339.346333] [ 3301]  1000  3301     6546      904      17        0             0 bash
+Dec 23 21:03:36 orkisz kernel: [ 7339.346336] [ 3309]  1000  3309    29057     1926      60        0             0 mutt
+Dec 23 21:03:36 orkisz kernel: [ 7339.346338] [ 3317]  1000  3317     6546      903      18        0             0 bash
+Dec 23 21:03:36 orkisz kernel: [ 7339.346341] [ 3323]  1000  3323    28375     1745      55        0             0 mutt
+Dec 23 21:03:36 orkisz kernel: [ 7339.346343] [ 3801]     0  3801    20632      148      45        0             0 login
+Dec 23 21:03:36 orkisz kernel: [ 7339.346345] [ 3824]  1000  3824     6614      964      18        0             0 bash
+Dec 23 21:03:36 orkisz kernel: [ 7339.346348] [ 4009]  1000  4009    33502      543      34        0             0 gvfsd-metadata
+Dec 23 21:03:36 orkisz kernel: [ 7339.346350] [ 4528]  1000  4528   169028     5008     222        0             0 scp-dbus-servic
+Dec 23 21:03:36 orkisz kernel: [ 7339.346352] [ 5235]  1000  5235    30651     2331      53        0             0 x-terminal-emul
+Dec 23 21:03:36 orkisz kernel: [ 7339.346354] [ 5236]  1000  5236    20865      145      41        0             0 x-terminal-emul
+Dec 23 21:03:36 orkisz kernel: [ 7339.346357] [ 5237]  1000  5237     6620      980      18        0             0 bash
+Dec 23 21:03:36 orkisz kernel: [ 7339.346359] [ 5291]     0  5291    59417      433      46        0             0 upowerd
+Dec 23 21:03:36 orkisz kernel: [ 7339.346361] [ 5513]  1000  5513     6614      956      19        0             0 bash
+Dec 23 21:03:36 orkisz kernel: [ 7339.346364] [ 5599]  1000  5599    33487     3022      55        0             0 x-terminal-emul
+Dec 23 21:03:36 orkisz kernel: [ 7339.346366] [ 5600]  1000  5600    20865      144      42        0             0 x-terminal-emul
+Dec 23 21:03:36 orkisz kernel: [ 7339.346368] [ 5601]  1000  5601     6582      940      17        0             0 bash
+Dec 23 21:03:36 orkisz kernel: [ 7339.346370] [ 5636]  1000  5636     6546      904      17        0             0 bash
+Dec 23 21:03:36 orkisz kernel: [ 7339.346373] [ 5788]  1000  5788     6548      313      16        0             0 htop
+Dec 23 21:03:36 orkisz kernel: [ 7339.346375] [ 5799]  1000  5799     2357       63      10        0             0 make
+Dec 23 21:03:36 orkisz kernel: [ 7339.346377] [ 5800]  1000  5800     1082       22       7        0             0 sh
+Dec 23 21:03:36 orkisz kernel: [ 7339.346380] [ 5801]  1000  5801     1082       25       7        0             0 sh
+Dec 23 21:03:36 orkisz kernel: [ 7339.346382] [ 5802]  1000  5802   882615   858512    1701        0             0 crash
+Dec 23 21:03:36 orkisz kernel: [ 7339.346384] Out of memory: Kill process 5802 (crash) score 874 or sacrifice child
+Dec 23 21:03:36 orkisz kernel: [ 7339.346386] Killed process 5802 (crash) total-vm:3530460kB, anon-rss:3434048kB, file-rss:0kB
