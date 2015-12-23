@@ -13,6 +13,15 @@ a pattern that userspace becomes unresponsive. My application
 (`crash.c`) allocates memory in a very similar way using GDK to 
 replicate the problem.
 
+I've observed the problem on two machines:
+
+  - Asus EeePC 1000 with Atom N270 (2010-2014),
+  - Lenovo S210 with Celeron 1037U (2014-…).
+
+My current kernel is:
+`3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt11-1+deb8u6 (2015-11-09) x86_64 
+GNU/Linux`.
+
 ## Symptoms
 
 The unresponsiveness goes with high CPU load and a lot of IO (read) 
